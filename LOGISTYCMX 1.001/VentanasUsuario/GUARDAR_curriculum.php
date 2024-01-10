@@ -26,9 +26,15 @@ if (isset($_POST['btnEnviarCurriculum'])) {
         $FielFormacion_Curriculum = trim($_POST['field_FormacionC']);
         $FielCorreo_Curriculum = trim($_POST['field_CorreoC']);
         $FielTelefono_Curriculum = trim($_POST['field_TelefonoC']);
-        $FechaNacimientoNormal = trim($_POST['field_FechaNacimientoC']);
 
-        $FechaNacimientoRevertida = strrev($FechaNacimientoNormal);
+
+        $FechaNacimientoNormal = trim($_POST['field_FechaNacimientoC']);
+        $fechaConvertida = str_replace("/", "-", $FechaNacimientoNormal);
+        $fechaObj = DateTime::createFromFormat('d-m-Y', $fechaConvertida);
+
+        //esta es la fecha ya chida que aparece en el formato  AAAA-MM-DD
+        $fechaFormateada = $fechaObj->format('Y-m-d');
+
 
         $fecha = date("y-m-d");
 
@@ -36,17 +42,14 @@ if (isset($_POST['btnEnviarCurriculum'])) {
 
             
             $consulta = "INSERT INTO curriculum (Nombres_CURRICULUM, ApellidoP_CURRICULUM, ApellidoM_CURRICULUM, Resumen_CURRICULUM, Historial_CURRICULUM, Formacion_CURRICULUM, Correo_CURRICULUM, telefono_CURRICULUM, FechaNacimiento_CURRICULUM, FechaEnvio_CURRICULUM  )
-                    VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum', '$FielResumen_Curriculum','$FielHistorial_Curriculum', '$FielFormacion_Curriculum' , '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$FechaNacimientoRevertida', '$fecha')";
+                    VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum', '$FielResumen_Curriculum','$FielHistorial_Curriculum', '$FielFormacion_Curriculum' , '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$fechaFormateada', '$fecha')";
 
             $resultado = mysqli_query($conex, $consulta);
             if ($resultado) {
                 //include('indexLOGIN.html');
                 
-                ?>
-                <script>
-                    alert("Curriculum Enviado");
-                </script>
-                <?php
+                echo "<script> alert('curriculum creado'.'$fechaFormateada'); </script>";
+
             } else {
                 ?>
                 <h3 class="error">Ocurrió un error</h3>
