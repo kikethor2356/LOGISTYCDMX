@@ -79,6 +79,15 @@
     background-color: brown;
 }
 
+.DIVbtn4{
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    top: 63%;
+    left: 0px;
+    background-color: brown;
+}
+
 .btn{
     width: 100%;
     height: 100%;
@@ -122,6 +131,34 @@
     background-color: rgb(255, 0, 221);
     display: none;
 }
+
+.main4curriculum{
+    position: absolute;
+    width: 77%;
+    height: 87%;
+    left: 23%;
+    top: 13%;
+    background-color: transparent;
+    display: none;
+}
+
+.contenedorCurriculums{
+    background-color: rgb(161, 202, 137);
+    position: relative;
+    width: 95%;
+    height: 88%;
+    left: 2.5%;
+
+}
+
+.tablaCurriculums{
+    border: 2px solid black;
+}
+
+tr th{
+    border: 2px solid black;
+}
+
 </style>
 
 <!----------------------------------------------------------------->
@@ -132,10 +169,12 @@
         var  main1 = document.getElementById("main1");
         var  main2 = document.getElementById("main2");
         var  main3 = document.getElementById("main3");
+        var  main4 = document.getElementById("main4");
 
         main1.style.display = "block";
         main2.style.display = "none";
         main3.style.display = "none";
+        main4.style.display = "none";
 
     }
 
@@ -143,10 +182,13 @@
         var  main1 = document.getElementById("main1");
         var  main2 = document.getElementById("main2");
         var  main3 = document.getElementById("main3");
+        var  main4 = document.getElementById("main4");
 
         main1.style.display = "none";
         main2.style.display = "block";
         main3.style.display = "none";
+        main4.style.display = "none";
+        
         
     }
 
@@ -155,10 +197,25 @@
         var  main1 = document.getElementById("main1");
         var  main2 = document.getElementById("main2");
         var  main3 = document.getElementById("main3");
+        var  main4 = document.getElementById("main4");
 
         main1.style.display = "none";
         main2.style.display = "none";
         main3.style.display = "block";
+        main4.style.display = "none";
+    }
+
+    function mostrarmain4(){
+        
+        var  main1 = document.getElementById("main1");
+        var  main2 = document.getElementById("main2");
+        var  main3 = document.getElementById("main3");
+        var  main4 = document.getElementById("main4");
+
+        main1.style.display = "none";
+        main2.style.display = "none";
+        main3.style.display = "none";
+        main4.style.display = "block";
     }
 
 </script>
@@ -198,6 +255,10 @@
 
                 <div class="DIVbtn3">
                     <button class="btn" onclick="mostrarmain3()">pedidos (prueba)</button>
+                </div>
+
+                <div class="DIVbtn4">
+                    <button class="btn" onclick="mostrarmain4()">Solicitudes de empleo</button>
                 </div>
                 
             </div>
@@ -257,6 +318,39 @@
 
             <div class="main3pedidos" id="main3">
                 <h1 align="center">Pedidos (pruebas)</h1>
+            </div>
+
+            
+            <div class="main4curriculum" id="main4">
+                <h1 align="center">Curriculum</h1>
+
+                <div class="contenedorCurriculums">
+
+
+                    <table class="tablaCurriculums">
+                        <thead>
+                            
+                            <tr>
+                                <th>Curriculums</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <th> <button>Colonia ratlas</button> </th>
+                            </tr>
+
+                        </tbody>
+
+                    </table>    
+
+
+
+                </div>
+
             </div>
         </main>
 
