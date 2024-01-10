@@ -17,23 +17,26 @@ if (isset($_POST['btnEnviarCurriculum'])) {
         strlen($_POST['field_FechaNacimientoC']) >= 1
     ) {
         //contra_usuario
-        $FielNombreUser = trim($_POST['field_NombresC']);
-        $FielApellidosUser = trim($_POST['field_ApellidoPC']);
-        $FielEmailUser = trim($_POST['field_ApellidoMC']);
-        $FielContraUser = trim($_POST['field_ResumenC']);
-        $FielTelefonoUser = trim($_POST['field_HistorialC']);
+        $FielNombre_Curriculum = trim($_POST['field_NombresC']);
+        $FielApellidoP_Curriculum = trim($_POST['field_ApellidoPC']);
+        $FielApellidoM_Curriculum = trim($_POST['field_ApellidoMC']);
+        $FielResumen_Curriculum = trim($_POST['field_ResumenC']);
+        $FielHistorial_Curriculum = trim($_POST['field_HistorialC']);
 
-        $FielTelefonoUser = trim($_POST['field_FormacionC']);
-        $FielTelefonoUser = trim($_POST['field_CorreoC']);
-        $FielTelefonoUser = trim($_POST['field_TelefonoC']);
-        $FielTelefonoUser = trim($_POST['field_FechaNacimientoC']);
+        $FielFormacion_Curriculum = trim($_POST['field_FormacionC']);
+        $FielCorreo_Curriculum = trim($_POST['field_CorreoC']);
+        $FielTelefono_Curriculum = trim($_POST['field_TelefonoC']);
+        $FechaNacimientoNormal = trim($_POST['field_FechaNacimientoC']);
+
+        $FechaNacimientoRevertida = strrev($FechaNacimientoNormal);
+
         $fecha = date("y-m-d");
 
             
 
             
-            $consulta = "INSERT INTO cliente_usuario (nombre_usuario, apellidos_usuario, correo_usuario, contrasena_usuario, telefono, categoria_usuario, fecha_creacion_usuario )
-                    VALUES('$FielNombreUser', '$FielApellidosUser', '$hash_correoUSUARIO', '$hash_contraUSUARIO','$FielTelefonoUser', '$CategoriaUser' , '$fecha')";
+            $consulta = "INSERT INTO curriculum (Nombres_CURRICULUM, ApellidoP_CURRICULUM, ApellidoM_CURRICULUM, Resumen_CURRICULUM, Historial_CURRICULUM, Formacion_CURRICULUM, Correo_CURRICULUM, telefono_CURRICULUM, FechaNacimiento_CURRICULUM, FechaEnvio_CURRICULUM  )
+                    VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum', '$FielResumen_Curriculum','$FielHistorial_Curriculum', '$FielFormacion_Curriculum' , '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$FechaNacimientoRevertida', '$fecha')";
 
             $resultado = mysqli_query($conex, $consulta);
             if ($resultado) {
@@ -41,7 +44,7 @@ if (isset($_POST['btnEnviarCurriculum'])) {
                 
                 ?>
                 <script>
-                    alert("La cuenta ha sido creada exitosamente");
+                    alert("Curriculum Enviado");
                 </script>
                 <?php
             } else {
