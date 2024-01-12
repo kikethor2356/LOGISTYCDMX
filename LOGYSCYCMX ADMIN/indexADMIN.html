@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
 </head>
 
 
@@ -208,12 +208,15 @@
         <main>
             <div class="main1AltaProducto" id="main1">
 
+                <form action="addProducto.php" method="post" name="add">
                 <h1 align="center">Alta de producto</h1>
                 <br>
-                <input type="text" placeholder="Nombre del producto" required>
+                <input type="text" name="NombreCat1" placeholder="Nombre del producto" required>
                 <br>
-                <input type="text" placeholder="Descripcion del producto" required>
+                <input type="text" name="descripcion" placeholder="Descripción del producto" required>
                 <br>
+                <input type="text" name="PrecioCat1" placeholder="Precio del producto" required>
+              <!--   <br>
                 <input type="text" placeholder="Precion Cat1" required>
                 <br>
                 <input type="text" placeholder="Precion Cat2" required>
@@ -225,31 +228,27 @@
                 <input type="text" placeholder="Precion Cat5" required>
                 <br>
                 <input type="text" placeholder="Precion Cat6" required>
+                <br> -->
                 <br>
-                <input type="text" placeholder="Nombre del producto" required>
-                <br>
-                <button>Dar de alta</button>
+                <td><input type="submit" name="submit" value="Dar de alta"></td>
+            </form>
             </div>
-
-
             <!---------------------------------->
 
             <div class="main2AltaAdmin" id="main2">
+                <form action="addAdmin.php" method="post" name="add">
                 <h1 align="center">Alta de Administradores</h1>
                 <br>
-                <input type="text" placeholder="Nombre(s)" required>
+                <input type="text" name="Nombre"  placeholder="Nombre(s)" required>
                 <br>
-                <input type="text" placeholder="Apellidos" required>
+                <input type="text" name="Apellidos" placeholder="Apellidos" required>
                 <br>
-                <input type="text" placeholder="Correo Electronico" required>
+                <input type="text" name="Correo" placeholder="Correo Electronico" required>
                 <br>
-                <input type="text" placeholder="Contraseña" required>
-                <br>
-                <input type="text" placeholder="Confirmar Contraseña" required>
+                <input type="text" name="Password" placeholder="Contraseña" required>
                 <br>
                 <button>Crear Cuenta</button>
-
-
+                </form>
             </div>
 
             
