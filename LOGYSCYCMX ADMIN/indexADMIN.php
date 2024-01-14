@@ -338,10 +338,14 @@ tr th{
 
                         <tbody>
 
+                            <form method="post" action="MostrarCurricuIndividual.php">
+
                             <?php
 
                             include("MostrarSolicitudesEmpleo.php");
                             ?>
+
+                            </form> 
 
                         </tbody>
 
