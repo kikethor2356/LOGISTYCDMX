@@ -1,6 +1,7 @@
 <?php
 // Include the database connection file
-require ("CONEXION/conexion.php");
+$directorioActual = dirname(__DIR__);
+require($directorioActual . "/CONEXION/conexion.php");
 
 if (isset($_POST['submit'])) {
 	// Escape special characters in string for use in SQL statement	
@@ -29,7 +30,7 @@ if (isset($_POST['submit'])) {
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO  productocat1 (`NombreCat1`, `descripcion`,`PrecioCat1`) VALUES ('$nomProd', '$descripcion', '$precioCat1')");
 		
-		header ("Location:indexADMIN.html");
+		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
 	}
 	close($conex);
 }

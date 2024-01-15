@@ -269,7 +269,7 @@ tr th{
         <main>
             <div class="main1AltaProducto" id="main1">
 
-                <form action="addProducto.php" method="post" name="add">
+                <form action="Productos\addProducto.php" method="post" name="add">
                 <h1 align="center">Alta de producto</h1>
                 <br>
                 <input type="text" name="NombreCat1" placeholder="Nombre del producto" required>
@@ -297,7 +297,7 @@ tr th{
             <!---------------------------------->
 
             <div class="main2AltaAdmin" id="main2">
-                <form action="addAdmin.php" method="post" name="addAdmin">
+                <form action="CuentasAdmin\addAdmin.php" method="post" name="addAdmin">
                 <h1 align="center">Alta de Administradores</h1>
                 <br>
                 <input type="text" name="Nombre"  placeholder="Nombre(s)" required>
@@ -338,11 +338,11 @@ tr th{
 
                         <tbody>
 
-                            <form method="post" action="MostrarCurricuIndividual.php">
+                            <form method="post" action="Curriculum\IndexMostrarCurricuIndividual.php">
 
                             <?php
 
-                            include("MostrarSolicitudesEmpleo.php");
+                            include("Curriculum\MostrarSolicitudesEmpleo.php");
                             ?>
 
                             </form> 

@@ -1,6 +1,7 @@
 <?php
 // Include the database connection file
-require ("CONEXION/conexion.php");
+$directorioActual = dirname(__DIR__);
+require($directorioActual . "/CONEXION/conexion.php");
 
 if (isset($_POST['submitAdmin'])) {
 	// Escape special characters in string for use in SQL statement	
@@ -30,13 +31,13 @@ if (isset($_POST['submitAdmin'])) {
 		// Show link to the previous page
 		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} else { 
-		echo "hola";
+		echo "hola1";
 		// If all the fields are filled (not empty) 
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO  Admin (`Nombre`, `Apellido`,`Correo`,`Password`) VALUES ('$nomAdm', '$apellidoAdm', '$correoAdm','$passwordAdm')");
 		
-		header ("Location:indexADMIN.html");
+		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
 	}
-	close($conex);
+		close($conex);
 }
 ?>

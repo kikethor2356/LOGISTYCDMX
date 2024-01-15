@@ -11,8 +11,9 @@ if (isset($_POST['btnCurriculum'])) {
 
         $IDbuscar = trim($_POST['btnCurriculum']);
 
-
-        $inc = include("CONEXION/conexion.php");
+        $directorioActual = dirname(__DIR__);
+        $inc=include($directorioActual . "/CONEXION/conexion.php");
+        
 
 
 
@@ -37,7 +38,7 @@ if (isset($_POST['btnCurriculum'])) {
                         
                         ?>
 
-
+                        <title><?php echo "Curriculum:  $Nombre_Curriculum" ?></title>
 
                         <h1> <?php echo $Nombre_Curriculum; ?></h1>
 
