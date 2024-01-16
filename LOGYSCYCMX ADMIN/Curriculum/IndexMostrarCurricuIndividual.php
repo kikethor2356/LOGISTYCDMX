@@ -34,6 +34,7 @@ if (isset($_POST['btnCurriculum'])) {
                         $FechaNacimiento_Curriculum = $row["FechaNacimiento_CURRICULUM"];
                         $FechaEnvio_Curriculum = $row["FechaEnvio_CURRICULUM"];
                         $ID_Curriculum = $row["Contador"];
+                        $NombreImagen_Curriculum = $row["Imagen_Curriculum"];
                         
                         
                         ?>
@@ -61,6 +62,8 @@ if (isset($_POST['btnCurriculum'])) {
                         <h1> <?php echo $FechaEnvio_Curriculum; ?></h1>
 
                         <h1> <?php echo $ID_Curriculum; ?></h1>
+
+                        <img src="<?php echo $NombreImagen_Curriculum; ?>">
                         
                         <?php
 
