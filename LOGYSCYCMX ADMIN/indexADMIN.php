@@ -15,7 +15,7 @@
     position: absolute;
     width: 100%;
     height: 13%;
-    background-color: aqua; 
+    background-color: black; 
     top:0px ;
     left: 0px;
 }
@@ -43,7 +43,7 @@
     position: absolute;
     width: 100%;
     height: 64%;
-    background-color: rgb(151, 151, 230);
+    background-color: black;
     top: 36%;
     left: 0px;
     box-sizing: 1;
@@ -52,13 +52,22 @@
 
 }
 
+.ctrban{
+    position: absolute;
+    background-color: black;
+    width: 70%;
+    height: 70%;
+    left: 26%;
+    top: 20%;
+}
+
 .DIVbtn1{
     position: absolute;
     width: 100%;
     height: 17%;
     top: 3%;
     left: 0px;
-    background-color: brown;
+    background-color: black;
 }
 
 .DIVbtn2{
@@ -67,7 +76,7 @@
     height: 17%;
     top: 23%;
     left: 0px;
-    background-color: brown;
+    background-color: black;
 }
 
 .DIVbtn3{
@@ -76,7 +85,7 @@
     height: 17%;
     top: 43%;
     left: 0px;
-    background-color: brown;
+    background-color: black;
 }
 
 .DIVbtn4{
@@ -85,20 +94,33 @@
     height: 17%;
     top: 63%;
     left: 0px;
-    background-color: brown;
+    background-color: black;
 }
 
 .btn{
-    width: 100%;
+    width: 85%;
     height: 100%;
     cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: #FC2D2D;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.btn:hover{
+    background-color: #FE4444;
 }
 
 .btn:focus{
-    width: 100%;
+    width: 85%;
     height: 100%;
     cursor: pointer;
-    background-color: yellow;
+    color: black;
+    background-color: #F96C2A;
 }
 
 .main1AltaProducto{
@@ -145,10 +167,10 @@
 .contenedorCurriculums{
     background-color: rgb(161, 202, 137);
     position: relative;
-    width: 95%;
-    height: 88%;
-    left: 2.5%;
-
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: -8.5%;
 }
 
 .tablaCurriculums{
@@ -157,6 +179,42 @@
 
 tr th{
     border: 2px solid black;
+}
+
+.acclink{
+    position: absolute;
+    left: 1%;
+    top: 7%;
+    width: 9%;
+    height: 50%;
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid white;
+}
+
+.acclink:hover{
+    cursor: pointer;
+}
+
+.clslink{
+    position: absolute;
+    left: 11%;
+    top: 7%;
+    width: 14%;
+    height: 50%;
+    color: white;
+    background-color: black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid white;
+}
+
+.clslink:hover{
+    cursor: pointer;
 }
 
 </style>
@@ -218,6 +276,55 @@ tr th{
         main4.style.display = "block";
     }
 
+    var specifyimage=new Array()
+
+specifyimage[0]="https://www.logistycmx.com/contacto.jpg"
+
+specifyimage[1]="https://scontent.fgdl2-1.fna.fbcdn.net/v/t39.30808-6/325643991_696222708746147_7073958842831652492_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=9Z6trmCiGP0AX_zZzxK&_nc_ht=scontent.fgdl2-1.fna&oh=00_AfBObNxteAabqFjeW8aOD19utshSLnVZkZhvCMhwlyBFXg&oe=65B4EEDB"
+
+specifyimage[2]="https://www.logistycmx.com/ppal.jpg"
+
+
+var delay=3000 //Tiempo de transición, 1000 = 1 segundo
+
+var count =1;
+
+ 
+var cubeimage=new Array()
+
+for (i=0;i<specifyimage.length;i++){
+
+cubeimage[i]=new Image()
+
+cubeimage[i].src=specifyimage[i]
+
+}
+
+
+function movecube(){
+
+if (window.createPopup)
+
+cube.filters[0].apply()
+
+document.images.cube.src=cubeimage[count].src;
+
+if (window.createPopup)
+
+cube.filters[0].play()
+
+count++;
+
+if (count==cubeimage.length)
+
+count=0;
+
+setTimeout("movecube()",delay)
+
+}
+
+window.onload=new Function("setTimeout('movecube()',delay)")
+
 </script>
 
 <!----------------------------------------------------------------->
@@ -229,8 +336,8 @@ tr th{
     <header>
 
         <div class="header1">
-             <button>Cuenta</button>
-             <button>Cerrar Sesión</button>
+             <button class="acclink">Cuenta</button>
+             <button class="clslink">Cerrar Sesión</button>
         </div>
 
     </header>
@@ -239,7 +346,7 @@ tr th{
     <section>
         <nav class="nav1">
 
-            <div class="cajaNAV1"></div>
+            <div class="cajaNAV1"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/17991703.548d45163e80e.png" style="position: absolute; width: 99.65%; height: 100%; border-right: 1.55px solid black"></div>
 
 
             <div class="cajaNAV2">
@@ -254,7 +361,7 @@ tr th{
                 </div>
 
                 <div class="DIVbtn3">
-                    <button class="btn" onclick="mostrarmain3()">pedidos (prueba)</button>
+                    <button class="btn" onclick="mostrarmain3()">Pedidos (prueba)</button>
                 </div>
 
                 <div class="DIVbtn4">
@@ -264,6 +371,8 @@ tr th{
             </div>
 
         </nav>
+
+        <div class="ctrban"><img src="https://www.logistycmx.com/contacto.jpg" style="position: absolute; width: 100%; height: 100%" name="cube"></div>
 
         <!---------------------------------->
         <main>
