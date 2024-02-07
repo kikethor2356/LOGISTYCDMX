@@ -10,7 +10,11 @@ if (isset($_POST['submitAdmin'])) {
 	$correoAdm = mysqli_real_escape_string($conex, $_POST['Correo']);
 	$passwordAdm = mysqli_real_escape_string($conex, $_POST['Password']);
 
-	echo "hola";
+
+	$hash_correo_admin = hash('sha256', $correoAdm);
+	$hash_contrasena_admin = hash('sha256', $passwordAdm);
+	
+
 
 	
 	// Check for empty fields
@@ -34,7 +38,7 @@ if (isset($_POST['submitAdmin'])) {
 		echo "hola1";
 		// If all the fields are filled (not empty) 
 		// Insert data into database
-		$result = mysqli_query($conex, "INSERT INTO  Admin (`Nombre`, `Apellido`,`Correo`,`Password`) VALUES ('$nomAdm', '$apellidoAdm', '$correoAdm','$passwordAdm')");
+		$result = mysqli_query($conex, "INSERT INTO  Admin (`Nombre`, `Apellido`,`Correo`,`Password_Admin`) VALUES ('$nomAdm', '$apellidoAdm', '$hash_correo_admin','$hash_contrasena_admin')");
 		
 		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
 	}

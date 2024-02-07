@@ -415,8 +415,9 @@ window.onload=new Function("setTimeout('movecube()',delay)")
                 <br>
                 <input type="text" name="Correo" placeholder="Correo Electronico" required>
                 <br>
-                <input type="text" name="Password" placeholder="Contraseña" required>
+                <input type="password" name="Password" placeholder="Contraseña" required>
                 <br>
+                
                 <td><input type="submit" name="submitAdmin" value="Crear Administrador"></td>
                 </form>
             </div>
