@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <script src="../Scripts/ScriptIndexAdmin.js"></script>
-    <link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css"> 
+    <link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
 
 </head>
 
@@ -16,8 +16,8 @@
     <header>
 
         <div class="header1">
-             <button class="acclink">Cuenta</button>
-             <button class="clslink">Cerrar Sesión</button>
+            <button class="acclink">Cuenta</button>
+            <button class="clslink">Cerrar Sesión</button>
         </div>
 
     </header>
@@ -47,7 +47,7 @@
                 <div class="DIVbtn4">
                     <button class="btn" onclick="mostrarmain4()">Solicitudes de empleo</button>
                 </div>
-                
+
             </div>
 
         </nav>
@@ -58,47 +58,55 @@
         <main>
             <div class="main1AltaProducto" id="main1">
 
-                <form action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Productos\addProducto.php" method="post" name="add">
-                <h1 align="center">Alta de producto</h1>
-                <br>
-                <input type="text" name="NombreCat1" placeholder="Nombre del producto" required>
-                <br>
-                <input type="text" name="descripcion" placeholder="Descripción del producto" required>
-                <br>
-                <input type="text" name="PrecioCat1" placeholder="Precio del producto" required>
-                <br>
-                <td><input type="submit" name="submit" value="Dar de alta"></td>
-            </form>
+                <form action="Productos\addProducto.php" method="post" name="add">
+                    <h1 align="center">Alta de producto</h1>
+                    <br>
+                    <input type="text" name="NombreCat1" placeholder="Nombre del producto" required>
+                    <br>
+                    <input type="text" name="descripcion" placeholder="Descripción del producto" required>
+                    <br>
+                    <input type="text" name="PrecioCat1" placeholder="Precio del producto" required>
+                    <br>
+                    <input type="text" name="AmarreAldo" placeholder="Amarre Aldo" required>
+                    <br>
+                    <input type="text" name="NumSerie" placeholder="Numero de serie" required>
+                    <br>
+                    <label for="Imagen">Sube una imagen</label>
+                    <br>
+                    <input type="file" name="Imagen" style="width: 40%;" required>
+                    <br>
+                    <td><input type="submit" name="submit" value="Dar de alta"></td>
+                </form>
             </div>
             <!---------------------------------->
 
             <div class="main2AltaAdmin" id="main2">
 
-            
+
                 <form action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\CuentasAdmin\addAdmin.php" method="post" name="addAdmin">
-                <h1 align="center">Alta de Administradores</h1>
-                <br>
-                <input type="text" name="Nombre"  placeholder="Nombre(s)" required>
-                <br>
-                <input type="text" name="Apellido" placeholder="Apellidos" required>
-                <br>
-                <input type="text" name="Correo" placeholder="Correo Electronico" required>
-                <br>
-                <input type="password" name="Password" placeholder="Contraseña" required>
-                <br>
-                
-                <td><input type="submit" name="submitAdmin" value="Crear Administrador"></td>
+                    <h1 align="center">Alta de Administradores</h1>
+                    <br>
+                    <input type="text" name="Nombre" placeholder="Nombre(s)" required>
+                    <br>
+                    <input type="text" name="Apellido" placeholder="Apellidos" required>
+                    <br>
+                    <input type="text" name="Correo" placeholder="Correo Electronico" required>
+                    <br>
+                    <input type="password" name="Password" placeholder="Contraseña" required>
+                    <br>
+
+                    <td><input type="submit" name="submitAdmin" value="Crear Administrador"></td>
                 </form>
             </div>
 
-            
+
             <!---------------------------------->
 
             <div class="main3pedidos" id="main3">
                 <h1 align="center">Pedidos (pruebas)</h1>
             </div>
 
-            
+
             <div class="main4curriculum" id="main4">
                 <h1 align="center">Curriculum</h1>
 
@@ -107,7 +115,7 @@
 
                     <table class="tablaCurriculums">
                         <thead>
-                            
+
                             <tr>
                                 <th>Curriculums</th>
                             </tr>
@@ -117,23 +125,23 @@
 
                         <tbody>
 
-                        <?php
-                        
-
-                        ?>
-                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
-
                             <?php
 
 
-                            include("..\FuncionesPHP\Curriculum\MostrarSolicitudesEmpleo.php");
                             ?>
+                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
 
-                            </form> 
+                                <?php
+
+
+                                include("..\FuncionesPHP\Curriculum\MostrarSolicitudesEmpleo.php");
+                                ?>
+
+                            </form>
 
                         </tbody>
 
-                    </table>    
+                    </table>
 
 
 
@@ -147,6 +155,7 @@
 
 
     <footer></footer>
-    
+
 </body>
+
 </html>

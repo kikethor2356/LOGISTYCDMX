@@ -45,6 +45,6 @@ if (isset($_POST['submitAdmin'])) {
 		
 		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
 	}
-		close($conex);
+		die($conex);
 }
 ?>
