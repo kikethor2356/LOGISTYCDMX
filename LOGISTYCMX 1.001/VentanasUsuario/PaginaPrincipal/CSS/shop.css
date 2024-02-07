@@ -1,0 +1,100 @@
+/*Shop Page*/
+
+#page-header{
+    background-image: url(https://amsatiendaenlinea.com.mx/cdn/shop/articles/Refacciones_para_camiones_diesel.jpg?v=1686085269);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    
+}
+
+#page-header h2,
+#page-header p{
+    color: #FFF;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #CA0101;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* SIngle Product */
+#prodetails .single-pro-image{
+
+       width: 40%;
+       margin-right: 50px; 
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+    color: #CA0101;
+}
+
+#prodetails .single-pro-details input{
+   width: 50px;
+   height: 47px;
+   padding-left: 10px;
+   font-size: 16px;
+   margin-right: 10px;
+    
+}
+
+#prodetails .single-pro-details button{
+    margin-top: 10px;
+    background-color: #CA0101;
+    padding: 15px;
+    color: #FFFBFB;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#prodetails .single-pro-details{
+    line-height: 25px;
+}
+
+#product1 h2{
+    color: black;
+}
