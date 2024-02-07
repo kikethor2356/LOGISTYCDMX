@@ -47,7 +47,8 @@ if (isset($_POST['submit'])) {
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `NumSerie`, `Imagen`, `AmarreAldo`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$numSerie', '$imagen', '$amarreAldo')");
 		
-		header ("Location: LOGYSCYCMX ADMIN\indexADMIN.php");
+		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
+		//sikirikis
 	}
 	die($conex);
 }
