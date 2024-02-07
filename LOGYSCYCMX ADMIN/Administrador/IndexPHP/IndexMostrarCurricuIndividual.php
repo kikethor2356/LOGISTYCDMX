@@ -12,12 +12,15 @@ if (isset($_POST['btnCurriculum'])) {
         $IDbuscar = trim($_POST['btnCurriculum']);
 
         $directorioActual = dirname(__DIR__);
-        $inc=include($directorioActual . "/CONEXION/conexion.php");
+        $rutaCompleta = $directorioActual;
+        $componentesRuta = explode('\\', $rutaCompleta);
+        $rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 4));
+        include ($rutaRecortada . "\CONEXION\conexion.php");
         
 
 
 
-        if ($inc){
+        if ($conex){
         $consulta = "SELECT * FROM curriculum WHERE Contador='". $IDbuscar."'";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado){

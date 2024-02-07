@@ -1,7 +1,10 @@
 <?php
 // Include the database connection file
 $directorioActual = dirname(__DIR__);
-require($directorioActual . "/CONEXION/conexion.php");
+$rutaCompleta = $directorioActual;
+$componentesRuta = explode('\\', $rutaCompleta);
+$rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 4));
+include ($rutaRecortada . "\CONEXION\conexion.php");
 
 if (isset($_POST['submitAdmin'])) {
 	// Escape special characters in string for use in SQL statement	

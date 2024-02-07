@@ -6,11 +6,14 @@
 
 <?php
 
-$inc = include("CONEXION/conexion.php");
+$directorioActual = dirname(__DIR__);
+$rutaCompleta = $directorioActual;
+$componentesRuta = explode('\\', $rutaCompleta);
+$rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 4));
+include ($rutaRecortada . "\CONEXION\conexion.php");
 
 
-
-if ($inc){
+if ($conex){
         $consulta = "SELECT * FROM curriculum ";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado){
