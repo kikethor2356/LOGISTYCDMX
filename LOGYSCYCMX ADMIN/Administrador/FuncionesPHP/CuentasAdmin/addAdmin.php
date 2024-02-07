@@ -1,4 +1,5 @@
 <?php
+//fierro
 // Include the database connection file
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
