@@ -57,8 +57,10 @@
         <!---------------------------------->
         <main>
             <div class="main1AltaProducto" id="main1">
+            
+            Productos\addProducto.php
 
-                <form action="Productos\addProducto.php" method="post" name="add">
+                <form action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Productos\addProducto.php" method="post" name="add">
                     <h1 align="center">Alta de producto</h1>
                     <br>
                     <input type="text" name="NombreCat1" placeholder="Nombre del producto" required>

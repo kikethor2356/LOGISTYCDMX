@@ -3,7 +3,7 @@
 $directorioActual = dirname(__DIR__);
 $rutaCompleta = $directorioActual;
 $componentesRuta = explode('\\', $rutaCompleta);
-$rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 5));
+$rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 4));
 include ($rutaRecortada . "\CONEXION\conexion.php");
         
 
