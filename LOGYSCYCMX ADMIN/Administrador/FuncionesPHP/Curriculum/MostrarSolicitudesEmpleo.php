@@ -1,7 +1,5 @@
-<!--
-<link rel="stylesheet" href="Estilos_MisClases.css">
-<script src="Script_MisClases.js"></script>
--->
+<link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
+
 
 
 <?php
@@ -12,7 +10,6 @@ $document_root = $_SERVER['DOCUMENT_ROOT'];
 // Construye la ruta a la carpeta "conexion"
 include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
 
-echo $document_root;
 
 
 
@@ -40,7 +37,7 @@ if ($conex){
 
 
                             <tr>
-                            <th> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>"><?php echo $Nombre_Curriculum ?></button> </th>
+                            <div  class="divcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="btncur"><?php echo $Nombre_Curriculum ?></button> </div>
                             </tr>
                         
                         <?php

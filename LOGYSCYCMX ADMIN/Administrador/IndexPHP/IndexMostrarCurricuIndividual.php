@@ -1,8 +1,5 @@
-<!--
-<link rel="stylesheet" href="Estilos_MisClases.css">
-<script src="Script_MisClases.js"></script>
--->
 
+<link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
 
 <?php
 
@@ -40,32 +37,35 @@ if (isset($_POST['btnCurriculum'])) {
                         
                         
                         ?>
+                        
+                        <div style="background-color: #C16D46; position:absolute; width: 100%; height: 100%; left: 0%; top: 0%; z-index:-1"></div>
+
 
                         <title><?php echo "Curriculum:  $Nombre_Curriculum" ?></title>
 
-                        <h1> <?php echo $Nombre_Curriculum; ?></h1>
+                        <h1 class="nomcur"> <?php echo $Nombre_Curriculum; ?></h1>
 
-                        <h1> <?php echo $ApeliidoP_Curriculum; ?></h1>
+                        <h1 class="appcur"> <?php echo $ApeliidoP_Curriculum; ?></h1>
 
-                        <h1> <?php echo $ApellidoM_Curriculum; ?></h1>
+                        <h1 class="apmcur"> <?php echo $ApellidoM_Curriculum; ?></h1>
 
-                        <h1> <?php echo $Resumen_Curriculum; ?></h1>
+                        <h1 class="rescur"> <?php echo $Resumen_Curriculum; ?></h1>
 
-                        <h1> <?php echo $Historial_Curriculum; ?></h1>
+                        <h1 class="hiscur"> <?php echo $Historial_Curriculum; ?></h1>
 
-                        <h1> <?php echo $Formacion_Curriculum; ?></h1>
+                        <h1 class="forcur"> <?php echo $Formacion_Curriculum; ?></h1>
 
-                        <h1> <?php echo $Correo_Curriculum; ?></h1>
+                        <h1 class="corcur"> <?php echo $Correo_Curriculum; ?></h1>
 
-                        <h1> <?php echo $Telefono_Curriculum; ?></h1>
+                        <h1 class="telcur"> <?php echo $Telefono_Curriculum; ?></h1>
 
-                        <h1> <?php echo $FechaNacimiento_Curriculum; ?></h1>
+                        <h1 class="naccur"> <?php echo $FechaNacimiento_Curriculum; ?></h1>
 
-                        <h1> <?php echo $FechaEnvio_Curriculum; ?></h1>
+                        <h1 class="envcur"> <?php echo $FechaEnvio_Curriculum; ?></h1>
 
-                        <h1> <?php echo $ID_Curriculum; ?></h1>
+                        <h1 class="idcur"> <?php echo $ID_Curriculum; ?></h1>
 
-                        <img src="<?php echo $NombreImagen_Curriculum; ?>">
+                        <div class="imgcur"><img src="<?php echo $NombreImagen_Curriculum; ?>" width="100%" height="100%" alt="Imagen Curriculum"></div>
                         
                         <?php
 

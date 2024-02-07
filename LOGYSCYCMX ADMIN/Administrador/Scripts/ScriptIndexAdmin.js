@@ -56,7 +56,7 @@ var specifyimage=new Array()
 
 specifyimage[0]="https://www.logistycmx.com/contacto.jpg"
 
-specifyimage[1]="https://scontent.fgdl2-1.fna.fbcdn.net/v/t39.30808-6/325643991_696222708746147_7073958842831652492_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=9Z6trmCiGP0AX_zZzxK&_nc_ht=scontent.fgdl2-1.fna&oh=00_AfBObNxteAabqFjeW8aOD19utshSLnVZkZhvCMhwlyBFXg&oe=65B4EEDB"
+specifyimage[1]="https://mir-s3-cdn-cf.behance.net/projects/404/17991703.548d45163e80e.png"
 
 specifyimage[2]="https://www.logistycmx.com/ppal.jpg"
 

@@ -119,7 +119,7 @@
                         <thead>
 
                             <tr>
-                                <th>Curriculums</th>
+                                <th class="curri">Curriculums</th>
                             </tr>
 
                         </thead>

@@ -162,7 +162,7 @@
 }
 
 .tablaCurriculums{
-    border: 2px solid black;
+    border-color: none;
 }
 
 tr th{
@@ -191,7 +191,7 @@ tr th{
     position: absolute;
     left: 11%;
     top: 7%;
-    width: 14%;
+    width: 21%;
     height: 50%;
     color: white;
     background-color: black;
@@ -199,8 +199,184 @@ tr th{
     font-weight: bold;
     font-size: 30px;
     border: 1px solid white;
+    text-align: center;
 }
 
 .clslink:hover{
     cursor: pointer;
+}
+
+.curri{
+    position: absolute;
+    left: 35%;
+    top: 17%;
+    border-color: white;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.divcur{
+    position: relative;
+    display: block;
+    border-color: none;
+    left: 37%;
+    top: 25%;
+}
+
+.btncur{
+    position: relative;
+    display: block;
+    width: 19%;
+    margin-bottom: 2px;
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.btncur:hover{
+    background-color: white;
+    color: black;
+}
+
+.nomcur{
+    position: absolute;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 5%;
+    left: 45%;
+}
+
+.nomcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.appcur{
+    position: absolute;
+    color: black;
+    top: 10%;
+    left: 45%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.appcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.apmcur{
+    position: absolute;
+    color: black;
+    top: 15%;
+    left: 45%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.apmcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.rescur{
+    position: absolute;
+    color: black;
+    top: 26%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.rescur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.hiscur{
+    position: absolute;
+    color: black;
+    top: 37%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hiscur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.forcur{
+    position: absolute;
+    color: black;
+    top: 48%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.forcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.corcur{
+    position: absolute;
+    color: black;
+    top: 54%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.corcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.telcur{
+    position: absolute;
+    color: black;
+    top: 60%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.telcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.naccur{
+    position: absolute;
+    color: black;
+    top: 66%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.naccur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.envcur{
+    position: absolute;
+    color: black;
+    top: 72%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.envcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.idcur{
+    position: absolute;
+    color: black;
+    top: 78%;
+    left: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.idcur:hover{
+    text-shadow: -.5px .5px black;
+}
+
+.imgcur{
+    position: absolute;
+    top: 7%;
+    left: 30%;
+    width: 13%;
+    height: 20%;
+    border: 2px solid black;
 }
