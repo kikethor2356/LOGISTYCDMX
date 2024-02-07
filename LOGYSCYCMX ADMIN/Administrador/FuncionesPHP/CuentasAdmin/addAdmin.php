@@ -1,11 +1,10 @@
 <?php
 // Include the database connection file
-
+$directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 
 // Construye la ruta a la carpeta "conexion"
 include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
-
         
 
 //$rutaRecortada . "\CONEXION\conexion.php"
