@@ -1,10 +1,11 @@
 <?php
+//fierro
 // Include the database connection file
 $directorioActual = dirname(__DIR__);
-$rutaCompleta = $directorioActual;
-$componentesRuta = explode('\\', $rutaCompleta);
-$rutaRecortada = implode('\\', array_slice($componentesRuta, 0, 4));
-include ($rutaRecortada . "\CONEXION\conexion.php");
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+
+// Construye la ruta a la carpeta "conexion"
+include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
         
 
 //$rutaRecortada . "\CONEXION\conexion.php"
@@ -46,7 +47,7 @@ if (isset($_POST['submitAdmin'])) {
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO  Admin (`Nombre`, `Apellido`,`Correo`,`Password_Admin`) VALUES ('$nomAdm', '$apellidoAdm', '$hash_correo_admin','$hash_contrasena_admin')");
 		
-		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
+		header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
 	}
 		die($conex);
 }

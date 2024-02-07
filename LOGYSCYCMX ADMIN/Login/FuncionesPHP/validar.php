@@ -10,9 +10,10 @@ $_SESSION['CorreoIngreso'] = $CorreoIngreso;
 
 
 // Obtén la ruta del directorio actual
-$directorioActual = dirname(__DIR__);
-$rutaRecortada = dirname($directorioActual);
-include($rutaRecortada."\CONEXION\conexion.php");
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+
+// Construye la ruta a la carpeta "conexion"
+include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
 
 
 
