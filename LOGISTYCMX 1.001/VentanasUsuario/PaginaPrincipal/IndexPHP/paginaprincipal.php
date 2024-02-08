@@ -1,12 +1,24 @@
+<?php
+
+use LDAP\Result;
+
+$directorioActual = dirname(__DIR__);
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
 </head>
+
 <body>
     <section id="header">
         <a href="#"><img src="" class="logo" alt="Logo"></a>
@@ -46,49 +58,40 @@
             <img src="" alt="Offers">
             <h6>Mayoristas</h6>
         </div>
-        
+
     </section>
+
 
     <section id="product1" class="section-p1">
         <h2>Nuestros Productos</h2>
         <p>Todo lo que necesites en un click</p>
         <div class="pro-container">
-            <div class="pro">
-                <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                <div class="des">
-                    <span>Toyota</span>
-                    <h5>Faro izquierdo</h5>
-                    <h4>$2499</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart" ></i></i></a>
-            </div>
-            <div class="pro">
-                <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                <div class="des">
-                    <span>Toyota</span>
-                    <h5>Faro izquierdo</h5>
-                    <h4>$2499</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart" ></i></i></a>
-            </div>
-            <div class="pro">
-                <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                <div class="des">
-                    <span>Toyota</span>
-                    <h5>Faro izquierdo</h5>
-                    <h4>$2499</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart" ></i></i></a>
-            </div>
-            <div class="pro">
-                <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                <div class="des">
-                    <span>Toyota</span>
-                    <h5>Faro izquierdo</h5>
-                    <h4>$2499</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart" ></i></i></a>
-            </div>
+
+            <?php
+
+            $sql = mysqli_query($conex, "SELECT * FROM productocat1");
+            $result = mysqli_num_rows($sql);
+            if ($result > 0) {
+                
+                while ($data = mysqli_fetch_array($sql)) {
+            ?>
+
+                    <div class="pro">
+                        <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
+                        <div class="des">
+                            <span>Toyota</span>
+                            <h5><?php echo $data['NombreCat1'] ?></h5>
+                            <h4>$<?php echo $data['PrecioCat1'] ?></h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+                    </div>
+
+            <?php
+                }
+            }
+
+            ?>
+
         </div>
     </section>
 
@@ -105,4 +108,5 @@
 
     </section>
 </body>
+
 </html>

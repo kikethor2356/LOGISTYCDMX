@@ -5,8 +5,6 @@ $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
 
 
-
-
 if ($conex){
         $consulta = "SELECT * FROM curriculum ";
         $resultado = mysqli_query($conex,$consulta);
