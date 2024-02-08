@@ -1,13 +1,7 @@
-<link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
-
-
-
 <?php
-//pariente
+
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
-
-// Construye la ruta a la carpeta "conexion"
 include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
 
 
@@ -37,7 +31,21 @@ if ($conex){
 
 
                             <tr>
-                            <div  class="divcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="btncur"><?php echo $Nombre_Curriculum ?></button> </div>
+                            
+                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
+                                <th> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>"><?php echo $Nombre_Curriculum ?></button> </th>
+                            </form>
+
+
+                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\BorrarCurriculum.php">
+                                <th> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>">Borrar</button> </th>
+                            </form>
+
+                            <form>
+                                <th> <button>Descargar</button> </th>
+                            </form>
+
+
                             </tr>
                         
                         <?php

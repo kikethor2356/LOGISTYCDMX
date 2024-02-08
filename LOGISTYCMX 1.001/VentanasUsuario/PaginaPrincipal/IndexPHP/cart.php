@@ -14,12 +14,12 @@
         <a href="#"><img src="" class="logo" alt="Logo"></a>
 
         <div id="Navbar">
-            <li><a  href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/paginaprincipal.html">Inicio</a></li>
-            <li><a  href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/shopping.html">Tienda</a></li>
+            <li><a  href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/paginaprincipal.php">Inicio</a></li>
+            <li><a  href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/shopping.php">Tienda</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Nosotros</a></li>
             <li><a href="">Contactanos</a></li>
-            <li><a class="active" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/cart.html"></a><i class="fa-solid fa-cart-shopping" style="color: #CA0101;"></i></a></li>
+            <li><a class="active" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/cart.php"></a><i class="fa-solid fa-cart-shopping" style="color: #CA0101;"></i></a></li>
         </div>
     </section>
 
