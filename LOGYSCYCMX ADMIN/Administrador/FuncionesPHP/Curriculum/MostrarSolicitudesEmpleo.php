@@ -27,24 +27,24 @@ if ($conex){
                         
                         ?>
 
-
-                            <tr>
+                            <tr  class="divscur">
                             
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
-                                <th> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>"><?php echo $Nombre_Curriculum ?></button> </th>
+                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum ?></button> </th>
                             </form>
 
 
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\BorrarCurriculum.php">
-                                <th> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>">Borrar</button> </th>
+                                <th style="width:13.8%; position:absolute;top: 0%; background-color: black; left: 347%"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><img src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png" width="100%"></button> </th>
                             </form>
 
                             <form>
-                                <th> <button>Descargar</button> </th>
+                                <th style="width:14.2%; position:absolute; background-color: black; left: 330%; bottom: 0%"> <button class="dwld"><img src="https://i.pinimg.com/originals/59/cd/12/59cd12b893adbc7e742588622453beda.png" width="100%"></button> </th>
                             </form>
 
 
                             </tr>
+
                         
                         <?php
 

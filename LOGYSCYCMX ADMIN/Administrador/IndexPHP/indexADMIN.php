@@ -48,6 +48,10 @@
                     <button class="btn" onclick="mostrarmain4()">Solicitudes de empleo</button>
                 </div>
 
+                <div class="DIVbtn5">
+                    <button class="btn" onclick="">Button</button>
+                </div>
+
             </div>
 
         </nav>

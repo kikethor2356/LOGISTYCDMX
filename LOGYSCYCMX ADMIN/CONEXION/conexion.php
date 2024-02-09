@@ -1,6 +1,6 @@
 <?php
 
-//colonia atlas
+//conexion
     $conex = mysqli_connect("localhost","root","","logistycmx_db");
 
     if (!$conex) {
