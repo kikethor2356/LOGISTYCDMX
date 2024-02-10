@@ -273,141 +273,151 @@ tr th{
 
 .nomcur{
     position: absolute;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    top: 5%;
-    left: 45%;
+    color: white;
+    font-family: Calibri;
+    top: 3%;
+    left: 39%;
+    font-size: 250%;
 }
 
 .nomcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .appcur{
     position: absolute;
-    color: black;
-    top: 10%;
-    left: 45%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    top: 8%;
+    left: 39%;
+    font-family: Calibri;
+    font-size: 250%;
 }
 
 .appcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .apmcur{
     position: absolute;
-    color: black;
-    top: 15%;
-    left: 45%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    top: 13%;
+    left: 39%;
+    font-family: Calibri;
+    font-size: 250%;
 }
 
 .apmcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .rescur{
     position: absolute;
     color: black;
-    top: 26%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 29%;
+    left: 41%;
+    width: 42%;
+    font-family: Calibri;
 }
 
 .rescur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .hiscur{
     position: absolute;
     color: black;
-    top: 37%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 56%;
+    left: 41%;
+    width: 42%;
+    font-family: Calibri;
 }
 
 .hiscur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .forcur{
     position: absolute;
     color: black;
-    top: 48%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 62.5%;
+    left: 19.5%;
+    width: 18%;
+    font-family: Calibri;
 }
 
 .forcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .corcur{
     position: absolute;
     color: black;
-    top: 54%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 53.5%;
+    left: 19.5%;
+    width: 17%;
+    font-size: 110%;
+    font-family: Calibri;
 }
 
 .corcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .telcur{
     position: absolute;
     color: black;
-    top: 60%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 38.5%;
+    left: 19.5%;
+    font-family: Calibri;
 }
 
 .telcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .naccur{
     position: absolute;
     color: black;
-    top: 66%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 78%;
+    left: 22.3%;
+    font-family: Calibri;
 }
 
 .naccur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .envcur{
     position: absolute;
     color: black;
-    top: 72%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 90%;
+    left: 19%;
+    font-family: Calibri;
 }
 
 .envcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .idcur{
     position: absolute;
     color: black;
-    top: 78%;
-    left: 30%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 90%;
+    left: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .idcur:hover{
-    text-shadow: -.5px .5px black;
+    text-shadow: -.2px .5px black;
 }
 
 .imgcur{
     position: absolute;
-    top: 7%;
-    left: 30%;
+    top: 3%;
+    left: 21.1%;
     width: 13%;
-    height: 20%;
-    border: 2px solid black;
+    height: 24%;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
 }
