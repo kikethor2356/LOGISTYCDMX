@@ -38,8 +38,8 @@ if ($conex){
                                 <th style="width:13.8%; position:absolute;top: 0%; background-color: black; left: 347%"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><img src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png" width="100%"></button> </th>
                             </form>
 
-                            <form>
-                                <th style="width:14.2%; position:absolute; background-color: black; left: 330%; bottom: 0%"> <button class="dwld"><img src="https://i.pinimg.com/originals/59/cd/12/59cd12b893adbc7e742588622453beda.png" width="100%"></button> </th>
+                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\pdf.php" target="_blank">
+                                <th style="width:14.2%; position:absolute; background-color: black; left: 330%; bottom: 0%"> <button class="dwld" value="<?php echo $ID_Curriculum; ?>" name="btnPDFCurriculum"><img src="https://i.pinimg.com/originals/59/cd/12/59cd12b893adbc7e742588622453beda.png" width="100%"></button> </th>
                             </form>
 
 
