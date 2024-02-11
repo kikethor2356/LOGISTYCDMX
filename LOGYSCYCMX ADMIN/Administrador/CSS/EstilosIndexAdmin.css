@@ -349,7 +349,7 @@ tr th{
 
 .forcur{
     position: absolute;
-    color: black;
+    color: white;
     top: 62.5%;
     left: 19.5%;
     width: 18%;
@@ -357,12 +357,12 @@ tr th{
 }
 
 .forcur:hover{
-    text-shadow: -.2px .5px black;
+    text-shadow: -.2px .5px white;
 }
 
 .corcur{
     position: absolute;
-    color: black;
+    color: White;
     top: 53.5%;
     left: 19.5%;
     width: 17%;
@@ -371,43 +371,43 @@ tr th{
 }
 
 .corcur:hover{
-    text-shadow: -.2px .5px black;
+    text-shadow: -.2px .5px white;
 }
 
 .telcur{
     position: absolute;
-    color: black;
+    color: White;
     top: 38.5%;
     left: 19.5%;
     font-family: Calibri;
 }
 
 .telcur:hover{
-    text-shadow: -.2px .5px black;
+    text-shadow: -.2px .5px White;
 }
 
 .naccur{
     position: absolute;
-    color: black;
+    color: White;
     top: 78%;
     left: 22.3%;
     font-family: Calibri;
 }
 
 .naccur:hover{
-    text-shadow: -.2px .5px black;
+    text-shadow: -.2px .5px White;
 }
 
 .envcur{
     position: absolute;
-    color: black;
+    color: white;
     top: 90%;
     left: 19%;
     font-family: Calibri;
 }
 
 .envcur:hover{
-    text-shadow: -.2px .5px black;
+    text-shadow: -.2px .5px white;
 }
 
 .idcur{
@@ -431,4 +431,47 @@ tr th{
     border: 5px solid white;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.vaccur{
+    position: absolute;
+    color: black;
+    top: 90%;
+    left: 41%;
+    width: 42%;
+    font-family: Calibri;
+}
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff4d4d;
+    padding-bottom: 5px;
+}
+
+.section p {
+    margin: 0;
+    line-height: 1.5;
 }

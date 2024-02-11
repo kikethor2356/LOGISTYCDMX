@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
+
 <?php
 
 $directorioActual = dirname(__DIR__);
@@ -46,38 +48,37 @@ $html = '
 
     <head>
         <meta charset="utf-8">
-
     </head>
 
     <body>
 
-        <h1>Titulo</h1>
+    <img src="imgUsuario.png">
 
-        <h3> '.$Nombre_Curriculum.' </h3>
+    <div class="container">
+        <h1 style="text-align: center; color: #ff4d4d;">Currículum Vitae</h1>
+        <h1 style="text-align: center; color: #ff4d4d;">Vacante: '.$vacante_Curriculum.'</h1>
+        <div class="section">
+            <h2>Datos Personales</h2>
+            <p><strong>Nombre:</strong> '.$Nombre_Curriculum.' '.$ApeliidoP_Curriculum.' '.$ApellidoM_Curriculum.'</p>
+            <p><strong>Correo electrónico:</strong> '.$Correo_Curriculum.'</p>
+            <p><strong>Teléfono:</strong> '.$Telefono_Curriculum.'</p>
+            <p><strong>Fecha de nacimiento:</strong> '.$FechaNacimiento_Curriculum.'</p>
+        </div>
 
-        <h3> '.$ApeliidoP_Curriculum.' </h3>
+        <div class="section">
+            <h2>Experiencia Laboral</h2>
+            <p><strong>Resumen:</strong> '.$Resumen_Curriculum.'</p>
+            <p><strong>Historial:</strong> '.$Historial_Curriculum.'</p>
+        </div>
 
-        <h3> '.$ApellidoM_Curriculum.' </h3>
-
-        <h3> '.$Resumen_Curriculum.' </h3>
-
-        <h3> '.$Historial_Curriculum.' </h3>
-
-        <h3> '.$Formacion_Curriculum.' </h3>
-
-        <h3> '.$Correo_Curriculum.' </h3>
-
-        <h3> '.$Telefono_Curriculum.' </h3>
-
-        <h3> '.$FechaNacimiento_Curriculum.' </h3>
-
+        <div class="section">
+            <h2>Educación</h2>
+            <p><strong>Formación:</strong> '.$Formacion_Curriculum.'</p>
+        </div>
         <h3> '.$FechaEnvio_Curriculum.' </h3>
 
         <h3> '.$ID_Curriculum.' </h3>
-
-
-        <img src="imgUsuario.png">
-
+    </div>
         </body>
 
 </html>
