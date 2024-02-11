@@ -161,6 +161,17 @@
     display: none;
 }
 
+.main5vacantes{
+    position: absolute;
+    width: 77%;
+    height: 87%;
+    left: 23%;
+    top: 13%;
+    background-color: rgb(255, 251, 0);
+    display: none;
+
+}
+
 .contenedorCurriculums{
     background-color: rgb(161, 202, 137);
     position: relative;

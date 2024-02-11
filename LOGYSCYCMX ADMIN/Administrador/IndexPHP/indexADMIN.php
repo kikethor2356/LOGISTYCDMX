@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="DIVbtn5">
-                    <button class="btn" onclick="">Button</button>
+                    <button class="btn" onclick="mostrarmain5()">Vacantes</button>
                 </div>
 
             </div>
@@ -154,6 +154,41 @@
                 </div>
 
             </div>
+
+
+            <div class="main5vacantes" id="main5">
+
+                <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php">
+                    <input type="text" name="FiedlNombreVacante" placeholder="Nombre Vacante">
+                    <br>
+                    <input type="text" name="FieldDescripcionVacante" placeholder="Descripcion">
+                    <br>
+                    <button type="submit" name="btnAltaVacante">Dar de alta</button>
+                </form>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>N</th>
+                            <th>vacante</th>
+                            <th>Descripcion</th>
+                            <th>Fecha alta</th>
+
+                        <tr>
+                    </thead>
+
+
+                    <tbody>
+                                <?php
+                                include("..\FuncionesPHP\Vacantes\GenerarTablaVacantes.php");
+                                ?>
+                    </tbody>   
+
+                </table>
+            </div>
+
+
         </main>
 
     </section>

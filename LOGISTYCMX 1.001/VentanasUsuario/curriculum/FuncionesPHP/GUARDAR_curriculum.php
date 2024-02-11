@@ -22,7 +22,8 @@ if ($posicion !== false) {
             strlen($_POST['field_FormacionC']) >= 1 &&
             strlen($_POST['field_CorreoC']) >= 1 &&
             strlen($_POST['field_TelefonoC']) >= 1 &&
-            strlen($_POST['field_FechaNacimientoC']) >= 1 
+            strlen($_POST['field_FechaNacimientoC']) >= 1 &&
+            strlen($_POST['ComboVacante']) >= 1 
         ) {
             //contra_usuario
             $FielNombre_Curriculum = trim($_POST['field_NombresC']);
@@ -33,6 +34,7 @@ if ($posicion !== false) {
             $FielFormacion_Curriculum = trim($_POST['field_FormacionC']);
             $FielCorreo_Curriculum = trim($_POST['field_CorreoC']);
             $FielTelefono_Curriculum = trim($_POST['field_TelefonoC']);
+            $seleccionVacante = $_POST["ComboVacante"];
     
     
             $FechaNacimientoNormal = trim($_POST['field_FechaNacimientoC']);
@@ -73,8 +75,8 @@ if (!empty($nombre_imagen) && !empty($temporal)) {
                 
     
                 
-                $consulta = "INSERT INTO curriculum (Nombres_CURRICULUM, ApellidoP_CURRICULUM, ApellidoM_CURRICULUM, Resumen_CURRICULUM, Historial_CURRICULUM, Formacion_CURRICULUM, Correo_CURRICULUM, telefono_CURRICULUM, FechaNacimiento_CURRICULUM, FechaEnvio_CURRICULUM , Imagen_Curriculum  )
-                        VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum', '$FielResumen_Curriculum','$FielHistorial_Curriculum', '$FielFormacion_Curriculum' , '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$fechaFormateada', '$fecha' , '$ruta')";
+                $consulta = "INSERT INTO curriculum (Nombres_CURRICULUM, ApellidoP_CURRICULUM, ApellidoM_CURRICULUM, Resumen_CURRICULUM, Historial_CURRICULUM, Formacion_CURRICULUM, Vacante_Curriculum, Correo_CURRICULUM, telefono_CURRICULUM, FechaNacimiento_CURRICULUM, FechaEnvio_CURRICULUM , Imagen_Curriculum  )
+                        VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum', '$FielResumen_Curriculum','$FielHistorial_Curriculum', '$FielFormacion_Curriculum' ,'$seleccionVacante', '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$fechaFormateada', '$fecha' , '$ruta')";
     
                 $resultado = mysqli_query($conex, $consulta);
                 if ($resultado) {

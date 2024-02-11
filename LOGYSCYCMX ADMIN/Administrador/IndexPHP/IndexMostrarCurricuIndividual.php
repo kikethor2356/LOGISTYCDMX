@@ -34,6 +34,7 @@ if (isset($_POST['btnCurriculum'])) {
                         $FechaEnvio_Curriculum = $row["FechaEnvio_CURRICULUM"];
                         $ID_Curriculum = $row["Contador"];
                         $NombreImagen_Curriculum = $row["Imagen_Curriculum"];
+                        $vacante_Curriculum = $row["Vacante_Curriculum"];
                         
                         
                         ?>
@@ -52,6 +53,7 @@ if (isset($_POST['btnCurriculum'])) {
                         <h1 class="apmcur"> <?php echo $ApellidoM_Curriculum; ?></h1>
                         <h1 style="color: black; position: absolute; left: 41%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 24%">Resumen</h1>
                         <h1 class="rescur"> <?php echo $Resumen_Curriculum; ?></h1>
+                        <h1><?php echo $vacante_Curriculum; ?></h1>
                         <h1 style="color: black; position: absolute; left: 41%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 51%">Historial</h1>
                         <h1 class="hiscur"> <?php echo $Historial_Curriculum; ?></h1>
                         <img src="https://cdn-icons-png.flaticon.com/512/2532/2532543.png" style="position: absolute; left: 19%; border-radius: 50%; overflow: hidden; height: 5%; width: 2.5%; top: 60%; border: 2px solid black">

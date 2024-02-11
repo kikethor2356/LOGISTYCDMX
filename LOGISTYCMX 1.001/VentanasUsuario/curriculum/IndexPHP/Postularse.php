@@ -14,6 +14,22 @@
     <header></header>
 
     <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>N</th>
+                    <th>Vacante</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <?php
+            include("..\FuncionesPHP\GeneradorVacantes.php");
+            ?>
+            </tbody>
+        </table>
+        
 
         <h1>Envia Tu curriculum</h1>
 
@@ -38,6 +54,14 @@
         <br>
 
         <input type="text" placeholder="Formacion Academica" name="field_FormacionC" required >
+
+        <br>
+
+        <select name="ComboVacante">
+            <?php
+                        include("..\FuncionesPHP\GeneradorComboVacante.php");
+            ?>
+        </select>
 
         <br>
 

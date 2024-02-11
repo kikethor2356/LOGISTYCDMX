@@ -21,7 +21,8 @@ if ($conex){
                         $Telefono_Curriculum = $row["telefono_CURRICULUM"];
                         $FechaNacimiento_Curriculum = $row["FechaNacimiento_CURRICULUM"];
                         $FechaEnvio_Curriculum = $row["FechaEnvio_CURRICULUM"];
-                        $ID_Curriculum = $row["Contador"];
+                        $ID_Curriculum = $row["Contador"]; 
+                        $Vacante_Curriculum = $row["Vacante_Curriculum"];
 
                         
                         
@@ -30,7 +31,7 @@ if ($conex){
                             <tr  class="divscur">
                             
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
-                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum ?></button> </th>
+                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum . $Vacante_Curriculum ?></button> </th>
                             </form>
 
 
