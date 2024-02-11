@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+/*HEADER START*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #FFFBFB;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+    
+    #Navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #Navbar li{
+       
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+    }
+    
+    #Navbar li a{
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        color: #393939;
+        transition: 0.3 ease;
+    }
+    
+    #Navbar li a:hover{
+        border-radius: 15px;
+        padding: 10px 15px;
+        background-color: #CA0101;
+        color: #fff;
+    }
+    
+
+
+/*HERO SECTION*/
+#Hero{
+    background-image: url(https://www.firestone.com.mx/content/dam/consumer/fst/la/mx/tips/cuidado-de-llantas/AutoRefacciones_Big.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: #fff;
+}
+
+#Hero H1{
+    color: #CA0101;
+}
+
+#Hero button{
+    margin-top: 30px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#Hero button:hover{
+    background-color: #CA0101;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#tags .box-tag{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #8b0000;
+    border-radius: 10px;
+    margin: 15px 40px;
+}
+
+#tags .box-tag img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#tags .box-tag h4{
+    color: #CA0101;
+}
+
+#email{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background: #393939;
+    color: #fff;
+}
+
+#email .text{
+    margin-left: 30px;
+}
+
+#email .text h2{
+    color: #CA0101;
+}
+
+#email .form{
+    margin-right: 60px;
+}
+
+#email input{
+    padding: 10px 60px;
+}
+
+#email button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #CA0101;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+#Contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#Contactanos .ubicacion{
+    color: #CA0101;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#Contactanos .ubicacion iframe{
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#Contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#Contactanos .contacto{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #8b0000;
+    border-radius: 10px;
+    margin: 15px 40px;
+}
+
+#Contactanos .contacto img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#Contactanos .contacto h1,h4{
+    
+    color: #8b0000;
+}
+
+
+#Nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background: #393939;
+    color: #fff;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    
+    color: #8b0000;
+}
