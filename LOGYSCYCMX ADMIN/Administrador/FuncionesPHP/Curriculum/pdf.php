@@ -28,6 +28,8 @@ if (isset($_POST['btnPDFCurriculum'])){
                         $FechaEnvio_Curriculum = $row["FechaEnvio_CURRICULUM"];
                         $ID_Curriculum = $row["Contador"];
                         $IMG_Curriculum = $row["Imagen_Curriculum"];
+                        $Vacante_Curriculum = $row["Vacante_Curriculum"];
+
                         
                     
                     }
@@ -63,6 +65,9 @@ $html = '
     <h1 style="color: black; position: absolute; left: 35%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 21%">Resumen</h1>
     <h1 style="position: absolute;color: black;top: 25%;left: 35%;width: 68%;font-family: Calibri;">'.$Resumen_Curriculum.'</h1>
     <h1 style="color: black; position: absolute; left: 35%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 50%">Historial</h1>
+    
+    <h1>'. $Vacante_Curriculum .' </h1>
+    
     <h1 style="position: absolute;color: black;top: 55%;left: 35%;width: 42%;font-family: Calibri;">'.$Historial_Curriculum.'</h1>
     <div style="position: absolute; left: 7%; height: 2%; width: 5%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 39%; font-size: 140%; color: white">Formación</div>
     <h1 style="position: absolute;color: white;top: 41%;left: 7%;width: 21%;font-family: Calibri; font-size: 140%;">'.$Formacion_Curriculum.'</h1>
@@ -79,6 +84,7 @@ $html = '
 
     <h1 style="color: black; position: absolute; left: 35%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 85%">Vacante</h1>
 
+     
         </body>
 
 </html>

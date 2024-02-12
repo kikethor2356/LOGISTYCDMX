@@ -13,7 +13,7 @@
             <a href="#"><img src="" class="logo" alt="Logo"></a>
     
             <div id="Navbar">
-                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.html">Postularse</a></li>
+                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.php">Postularse</a></li>
                 <li><a href="#Contactanos">Contactanos</a></li>
                 <li><a href="#Nosotros">Nosotros</a></li>    
             </div>
