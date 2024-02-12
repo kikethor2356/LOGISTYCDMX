@@ -79,7 +79,7 @@ include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php');
                     <div class="pro">
                         <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
                         <div class="des">
-                            <span>Toyota</span>
+                            <span><?php echo $data['Marca'] ?></span>
                             <h5><?php echo $data['NombreCat1'] ?></h5>
                             <h4>$<?php echo $data['PrecioCat1'] ?></h4>
                         </div>

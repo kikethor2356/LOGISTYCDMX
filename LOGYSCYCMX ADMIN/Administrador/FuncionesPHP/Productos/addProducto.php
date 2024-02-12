@@ -14,13 +14,13 @@ if (isset($_POST['submit'])) {
 	$imagen = mysqli_real_escape_string($conex, $_POST['Imagen']);
 	$numSerie = mysqli_real_escape_string($conex, $_POST['NumSerie']);
 	$amarreAldo = mysqli_real_escape_string($conex, $_POST['AmarreAldo']);
-
+	$marca = mysqli_real_escape_string($conex, $_POST['Marca']);
 
 
 
 	
 	// Check for empty fields
-	if (empty($nomProd) || empty($descripcion) || empty($precioCat1) || empty($imagen) || empty($numSerie) || empty($amarreAldo)) {
+	if (empty($nomProd) || empty($descripcion) || empty($precioCat1) || empty($imagen) || empty($numSerie) || empty($amarreAldo) || empty($marca)) {
 		if (empty($nomProd)) {
 			echo "<font color='red'>Name field is empty.</font><br/>";
 		}
@@ -39,13 +39,16 @@ if (isset($_POST['submit'])) {
 		if (empty($amarreAldo)) {
 			echo "<font color='red'>Aldo field is empty.</font><br/>";
 		}	
+		if (empty($marca)) {
+			echo "<font color='red'>Marca field is empty.</font><br/>";
+		}	
 		// Show link to the previous page
 		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} else { 
 		// If all the fields are filled (not empty) 
 
 		// Insert data into database
-		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `NumSerie`, `Imagen`, `AmarreAldo`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$numSerie', '$imagen', '$amarreAldo')");
+		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `NumSerie`, `Imagen`, `AmarreAldo`,`Marca`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$numSerie', '$imagen', '$amarreAldo','$marca')");
 		
 		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
 

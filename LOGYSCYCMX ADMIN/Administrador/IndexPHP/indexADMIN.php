@@ -61,8 +61,8 @@
         <!---------------------------------->
         <main>
             <div class="main1AltaProducto" id="main1">
-            
-            Productos\addProducto.php
+
+                Productos\addProducto.php
 
                 <form action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Productos\addProducto.php" method="post" name="add">
                     <h1 align="center">Alta de producto</h1>
@@ -76,6 +76,24 @@
                     <input type="text" name="AmarreAldo" placeholder="Amarre Aldo" required>
                     <br>
                     <input type="text" name="NumSerie" placeholder="Numero de serie" required>
+                    <br>
+                    <label for="marca">Selecciona una marca de carro:</label>
+                    <select id="marca" name="Marca">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Subaru">Subaru</option>
+                        <!-- Agrega más marcas de carro según sea necesario -->
+                    </select>
                     <br>
                     <label for="Imagen">Sube una imagen</label>
                     <br>
@@ -180,10 +198,10 @@
 
 
                     <tbody>
-                                <?php
-                                include("..\FuncionesPHP\Vacantes\GenerarTablaVacantes.php");
-                                ?>
-                    </tbody>   
+                        <?php
+                        include("..\FuncionesPHP\Vacantes\GenerarTablaVacantes.php");
+                        ?>
+                    </tbody>
 
                 </table>
             </div>
