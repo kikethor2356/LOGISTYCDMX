@@ -12,6 +12,8 @@
 
     <body>
 
+
+
         <section id="header">
             <a href="#"><img src="" class="logo" alt="Logo"></a>
     
@@ -21,6 +23,22 @@
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Nosotros</a></li>    
             </div>
         </section>
+
+        <table>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>Vacante</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        <?php
+        include("..\FuncionesPHP\GeneradorVacantes.php");
+        ?>
+        </tbody>
+    </table>
 
         <div class="container-boss">
             <div class="container">

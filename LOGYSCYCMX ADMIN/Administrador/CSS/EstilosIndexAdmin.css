@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
 .header1{
 
     position: absolute;
@@ -172,6 +182,52 @@
 
 }
 
+.container form{
+    width: 50%;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.form-control input, select{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #393939;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+.mainForm button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #CA0101;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.mainForm button:hover{
+    background-color: #5e0303;
+}
+
 .contenedorCurriculums{
     background-color: rgb(161, 202, 137);
     position: relative;
@@ -181,14 +237,17 @@
     top: -10%;
 }
 
-.tablaCurriculums{
-    border-color: none;
-    position: relative;
-    top: 20%;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
-
-tr th{
-    border: 2px solid black;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
 }
 
 .acclink{

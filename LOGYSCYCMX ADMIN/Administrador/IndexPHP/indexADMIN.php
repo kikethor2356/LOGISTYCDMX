@@ -176,13 +176,23 @@
 
             <div class="main5vacantes" id="main5">
 
-                <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php">
-                    <input type="text" name="FiedlNombreVacante" placeholder="Nombre Vacante">
-                    <br>
-                    <input type="text" name="FieldDescripcionVacante" placeholder="Descripcion">
-                    <br>
+            <div class="container">
+            <form class="mainForm" method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php">
+                    <div class="form-control">
+                        <label>Nombre de la vacante</label>
+                        <input type="text" name="FiedlNombreVacante" placeholder="Escribe El Nombre Vacante">
+                    </div>
+
+                    <div class="form-control">
+                        <label>Descripcion</label>
+                        <input type="text" name="FieldDescripcionVacante" placeholder="Escribe La Descripcion">
+                    </div>
+                    
                     <button type="submit" name="btnAltaVacante">Dar de alta</button>
                 </form>
+            </div>
+
+                
 
                 <table>
 
