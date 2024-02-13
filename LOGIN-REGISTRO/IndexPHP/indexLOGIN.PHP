@@ -18,7 +18,7 @@
         
         <div  class="form-container sign-up">
 
-                <form method="POST" action="\LOGISTYCMX 1.001\LOGIN-REGISTRO\FuncionesPHP\Guardar_Usuario.php">
+                <form method="POST" action="\LOGIN-REGISTRO\FuncionesPHP\Guardar_Usuario.php">
     
                     <h1>Crea una cuenta</h1>
     
@@ -46,7 +46,7 @@
         <div class="form-container sign-in">
 
   
-                <form method="post" action="\LOGISTYCMX 1.001\LOGIN-REGISTRO\FuncionesPHP\validar.php">
+                <form method="post" action="\LOGIN-REGISTRO\FuncionesPHP\validar.php">
                     <h1>Bienvenido</h1>
                     <input type="email" placeholder="Correo electronico" name="CorreoIngresado" required>
                     <input type="password" placeholder="Contraseña" name="CntrasenaIngresada" required>

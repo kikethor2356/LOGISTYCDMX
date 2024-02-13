@@ -2,7 +2,7 @@
 
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
-include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
+include($document_root . '\CONEXION\conexion.php');
 
 require "vendor\autoload.php";
 

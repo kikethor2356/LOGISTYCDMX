@@ -1,15 +1,17 @@
 <?php
 
 
-$ruta_completa = dirname(__DIR__);
-$directorio_deseado = 'LOGISTYCMX 1.001';
+$directorioActual = dirname(__DIR__);
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+include($document_root . '\CONEXION\conexion.php');
+
 $posicion = strpos($ruta_completa, $directorio_deseado);
 
 
 if ($posicion !== false) {
     
     $nueva_ruta = substr($ruta_completa, 0, $posicion + strlen($directorio_deseado));
-    require($nueva_ruta."\CONEXION\conexion.php");
+    
 
     if (isset($_POST['btnEnviarCurriculum'])) {
         if (

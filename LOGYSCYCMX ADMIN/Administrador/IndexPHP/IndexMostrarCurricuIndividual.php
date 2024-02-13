@@ -9,10 +9,9 @@ if (isset($_POST['btnCurriculum'])) {
 
         $IDbuscar = trim($_POST['btnCurriculum']);
 
+        $directorioActual = dirname(__DIR__);
         $document_root = $_SERVER['DOCUMENT_ROOT'];
-
-        // Construye la ruta a la carpeta "conexion"
-        include($document_root . '\LOGYSCYCMX ADMIN\CONEXION\conexion.php') ;
+        include($document_root . '\CONEXION\conexion.php');
         
 
 

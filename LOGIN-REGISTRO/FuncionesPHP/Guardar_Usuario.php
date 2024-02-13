@@ -34,7 +34,7 @@ if (isset($_POST['BtnRegistrar'])) {
         if (mysqli_num_rows($resultadoCorreo) > 0) {
             // El correo ya existe en la base de datos
 
-            header("location: \LOGISTYCMX 1.001\LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
+            header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
             ?>
             <script>
                 alert("El correo ya está registrado. Por favor, utiliza otro correo.");
@@ -42,7 +42,7 @@ if (isset($_POST['BtnRegistrar'])) {
             <?php
         } elseif (mysqli_num_rows($resultadoTelefono) > 0) {
 
-            header("location: \LOGISTYCMX 1.001\LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
+            header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
             // El teléfono ya existe en la base de datos
             ?>
             <script>
@@ -65,7 +65,7 @@ if (isset($_POST['BtnRegistrar'])) {
                 
 
                 
-                header("location: \LOGISTYCMX 1.001\LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
+                header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
 
                 ?>
                 <script>
