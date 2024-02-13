@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 <?php
 
 $directorioActual = dirname(__DIR__);
@@ -31,16 +33,16 @@ if ($conex){
                             <tr  class="divscur">
                             
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
-                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum . $Vacante_Curriculum ?></button> </th>
+                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum?><div></div><?php echo $Vacante_Curriculum ?></button> </th>
                             </form>
 
 
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\BorrarCurriculum.php">
-                                <th style="width:13.8%; position:absolute;top: 0%; background-color: black; left: 347%"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><img src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png" width="100%"></button> </th>
+                                <th style="width:13.8%; position:relative;top: 0%; background-color: black; left: 97%"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><i class="fa-solid fa-trash fa-3x" style="color: #000000;"></i></button> </th>
                             </form>
 
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\pdf.php" target="_blank">
-                                <th style="width:14.2%; position:absolute; background-color: black; left: 330%; bottom: 0%"> <button class="dwld" value="<?php echo $ID_Curriculum; ?>" name="btnPDFCurriculum"><img src="https://i.pinimg.com/originals/59/cd/12/59cd12b893adbc7e742588622453beda.png" width="100%"></button> </th>
+                                <th style="width:13.8%; position:relative; background-color: black; left: 69.5%; bottom: 0%"> <button class="dwld" value="<?php echo $ID_Curriculum; ?>" name="btnPDFCurriculum"><i class="fa-solid fa-file-arrow-down fa-3x" style="color: #000000;"></i></button> </th>
                             </form>
 
 

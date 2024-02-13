@@ -230,7 +230,7 @@ tr th{
 
 .curri{
     position: absolute;
-    left: 150%;
+    left: 90%;
     bottom: 105%;
     border-color: white;
     color: white;
@@ -249,8 +249,8 @@ tr th{
 .DIVcur{
     position: relative;
     display: block;
-    width: 300%;
-    left: 27%;
+    width: 200%;
+    left: 15%;
     background-color: black;
 }
 
@@ -265,7 +265,11 @@ tr th{
 }
 
 .delt{
+    position: relative;
     color: black;
+    right: 1%;
+    width: 100%;
+    height: 100%;
 }
 
 .delt:hover{
@@ -274,7 +278,11 @@ tr th{
 }
 
 .dwld{
+    position: relative;
     color: black;
+    right: 2%;
+    width: 100%;
+    height: 100%;
 }
 
 .dwld:hover{
