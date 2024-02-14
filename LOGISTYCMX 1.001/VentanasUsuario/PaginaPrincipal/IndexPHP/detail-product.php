@@ -1,3 +1,34 @@
+<?php
+
+$directorioActual = dirname(__DIR__);
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+include($document_root . '\CONEXION\conexion.php');
+
+if ($conex){
+
+    if (isset($_POST['btnDetalleProducto'])) {
+
+        $IDbuscarProducto = trim($_POST['btnDetalleProducto']);
+
+        $consulta = "SELECT * FROM productocat1 WHERE ContadorCat1='$IDbuscarProducto'";
+        $resultado = mysqli_query($conex,$consulta);
+        if ($resultado){
+    
+                while ($row = $resultado->fetch_array()){
+                        $Nombre_Producto = $row["NombreCat1"];
+                        $Descripcion_Producto = $row["descripcion"];
+                        $PrecioCat1_Producto = $row["PrecioCat1"];
+                        $Marca_Producto = $row["Marca"];
+                
+    
+                }
+            }
+        }
+
+    }    
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,18 +75,19 @@
 
     <div class="single-pro-details">
         <h6>Inicio/ Faro</h6>
-        <h4>Faro Izquierdo de Toyota</h4>
-        <h2>$2499.00</h2>
+        <h4><?php echo $Nombre_Producto; ?></h4>
+        <h2>$<?php echo $PrecioCat1_Producto; ?></h2>
 
-        <input type="number" value="1">
+        <input type="number" value="1" min="1">
         <button class="normal">Añadir al carrito</button>
 
-        <h4>Detalles del producto</h4>
-        <span>lahdljhajdhlakhdlahhdlkahdlhalhdlkahlkd
-            djkahdhlahkdhalkhdlkahdlhalkhdlkahlkdhlakhkdlkad
-            adkdlkahlkdhalhdlkahlkdhklahkldhalhldhalkhdklahd
-            ajkdhklagkjdgjagdkgakdjgakdgka
+        <h4>Descripcion del producto</h4>
+        <span>
+        <?php echo $Descripcion_Producto; ?>
         </span>
+
+        <h4>Marca del producto</h4>
+        <span><?php echo $Marca_Producto; ?></span>
     </div>
    </section>
 

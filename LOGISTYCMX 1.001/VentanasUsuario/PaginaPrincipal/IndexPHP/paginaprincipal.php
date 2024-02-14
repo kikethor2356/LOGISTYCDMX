@@ -1,12 +1,3 @@
-<?php
-
-use LDAP\Result;
-
-$directorioActual = dirname(__DIR__);
-$document_root = $_SERVER['DOCUMENT_ROOT'];
-include($document_root . '\CONEXION\conexion.php');
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +8,7 @@ include($document_root . '\CONEXION\conexion.php');
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
+    <script src="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/Scripts/paginaprincipal.js"></script>
 </head>
 
 <body>
@@ -32,7 +24,6 @@ include($document_root . '\CONEXION\conexion.php');
             <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/cart.php"><i class="fa-solid fa-cart-shopping" style="color: #CA0101;"></i></a></li>
         </div>
     </section>
-
     <section id="hero">
         <h4>Preventa</h4>
         <h2>Precios especiales</h2>
@@ -61,39 +52,53 @@ include($document_root . '\CONEXION\conexion.php');
 
     </section>
 
-
-    <section id="product1" class="section-p1">
         <h2>Nuestros Productos</h2>
         <p>Todo lo que necesites en un click</p>
+
+        <button onclick="MostrarLista()">Lista</button>
+        <button onclick="MostrarCuadricula()">Cuadricula</button>
+        
+
+    <section id="product1" class="section-p1" style="display: none;">
+        
         <div class="pro-container">
 
-            <?php
-
-            $sql = mysqli_query($conex, "SELECT * FROM productocat1");
-            $result = mysqli_num_rows($sql);
-            if ($result > 0) {
-                
-                while ($data = mysqli_fetch_array($sql)) {
-            ?>
-
-                    <div class="pro">
-                        <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                        <div class="des">
-                            <span><?php echo $data['Marca'] ?></span>
-                            <h5><?php echo $data['NombreCat1'] ?></h5>
-                            <h4>$<?php echo $data['PrecioCat1'] ?></h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></i></a>
-                    </div>
-
-            <?php
-                }
-            }
-
-            ?>
+        <?php  include("..\FuncionesPHP\GeneradorCuadricula.php"); ?>
 
         </div>
     </section>
+
+
+
+    <section style="display: block;" id="tabla1">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Foto</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Existencia</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <?php  include("..\FuncionesPHP\GeneradorTabla.php"); ?>
+            </tbody>
+
+
+
+        </table>
+        
+        <?php ?>
+        
+    </section>
+
+
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">

@@ -19,6 +19,8 @@ include($document_root . '\CONEXION\conexion.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/shop.css">
+    <script src="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/Scripts/Shopping.js"></script>
+
 </head>
 
 <body>
@@ -41,36 +43,50 @@ include($document_root . '\CONEXION\conexion.php');
 
     </section>
 
+    <section>
+    <button onclick="MostrarLista()">Lista</button>
+    <button onclick="MostrarCuadricula()">Cuadricula</button>
+    </section>    
 
-    <section id="product1" class="section-p1">
+
+    <section id="product1" class="section-p1" style="display: none;">
         <div class="pro-container">
 
-            <?php
-
-            $sql = mysqli_query($conex, "SELECT * FROM productocat1");
-            $result = mysqli_num_rows($sql);
-            if ($result > 0) {
-
-                while ($data = mysqli_fetch_array($sql)) {
-            ?>
-
-                    <div class="pro">
-                        <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-                        <div class="des">
-                            <span><?php echo $data['Marca'] ?></span>
-                            <h5><?php echo $data['NombreCat1'] ?></h5>
-                            <h4>$<?php echo $data['PrecioCat1'] ?></h4>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></i></a>
-                    </div>
-
-            <?php
-                }
-            }
-
-            ?>
+        <?php  include("..\FuncionesPHP\GeneradorCuadricula.php"); ?>
         </div>
     </section>
+
+
+    <section style="display: block;" id="tabla1">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Foto</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Existencia</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <?php  include("..\FuncionesPHP\GeneradorTabla.php"); ?>
+            </tbody>
+
+
+
+        </table>
+
+        <?php ?>
+
+    </section>
+
+
+
 
     <section id="pagination" class="section-p1">
         <a href="">1</a>

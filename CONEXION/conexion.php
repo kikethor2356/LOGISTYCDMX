@@ -5,6 +5,6 @@
     if (!$conex) {
         die("Error de conexión: " . mysqli_connect_error());
     } else {
-        echo "conexion exitosa";
+        //echo "conexion exitosa";
     }
 ?>
