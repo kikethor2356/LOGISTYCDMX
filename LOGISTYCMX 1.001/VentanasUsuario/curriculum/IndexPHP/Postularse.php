@@ -12,8 +12,6 @@
 
     <body>
 
-
-
         <section id="header">
             <a href="#"><img src="" class="logo" alt="Logo"></a>
     
@@ -56,39 +54,6 @@
                             required 
                         >
                     </div>
-    
-    
-                    <div class="form-control">
-                        <label>Resumen Profesional</label>
-                        <input 
-                            type="text" 
-                            placeholder="Resumen Profesional" 
-                            name="field_ResumenC" 
-                            required 
-                        >
-                    </div>
-    
-    
-                    <div class="form-control">
-                        <label>Resumen Laboral</label>
-                        <input 
-                            type="text" 
-                            placeholder="Historial Laboral" 
-                            name="field_HistorialC" 
-                            required 
-                        >   
-                    </div>
-    
-                    <div class="form-control">
-                        <label>Formacion Academica</label>
-                        <input 
-                            type="text" 
-                            placeholder="Formacion Academica" 
-                            name="field_FormacionC" 
-                            required 
-                        >
-                    </div>
-    
                     <div class="form-control">
                         <label>Vacantes Disponibles</label>
                         <select name="ComboVacante">
@@ -121,7 +86,7 @@
                     <div class="form-control">
                         <label>Fecha de Nacimiento</label>
                         <input 
-                            type="text" 
+                            type="date" 
                             placeholder="DD/MM/AAAA" 
                             name="field_FechaNacimientoC" 
                             required 
