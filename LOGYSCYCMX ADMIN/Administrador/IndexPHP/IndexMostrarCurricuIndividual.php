@@ -25,15 +25,12 @@ if (isset($_POST['btnCurriculum'])) {
                         $Nombre_Curriculum = $row["Nombres_CURRICULUM"];
                         $ApeliidoP_Curriculum = $row["ApellidoP_CURRICULUM"];
                         $ApellidoM_Curriculum = $row["ApellidoM_CURRICULUM"];
-                        $Resumen_Curriculum = $row["Resumen_CURRICULUM"];
-                        $Historial_Curriculum = $row["Historial_CURRICULUM"];
-                        $Formacion_Curriculum = $row["Formacion_CURRICULUM"];
                         $Correo_Curriculum = $row["Correo_CURRICULUM"];
                         $Telefono_Curriculum = $row["telefono_CURRICULUM"];
                         $FechaNacimiento_Curriculum = $row["FechaNacimiento_CURRICULUM"];
                         $FechaEnvio_Curriculum = $row["FechaEnvio_CURRICULUM"];
                         $ID_Curriculum = $row["Contador"];
-                        $NombreImagen_Curriculum = $row["Imagen_Curriculum"];
+                        $NombreImagen_Curriculum = $row["archivo_pdf"];
                         $vacante_Curriculum = $row["Vacante_Curriculum"];
                         
                         
@@ -51,12 +48,6 @@ if (isset($_POST['btnCurriculum'])) {
                         <h1 class="appcur"> <?php echo $ApeliidoP_Curriculum; ?></h1>
 
                         <h1 class="apmcur"> <?php echo $ApellidoM_Curriculum; ?></h1>
-                        <h1 style="color: black; position: absolute; left: 41%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 24%">Resumen</h1>
-                        <h1 class="rescur"> <?php echo $Resumen_Curriculum; ?></h1>
-                        <h1 style="color: black; position: absolute; left: 41%; font-family: Verdana, Geneva, Tahoma, sans-serif; top: 51%">Historial</h1>
-                        <h1 class="hiscur"> <?php echo $Historial_Curriculum; ?></h1>
-                        <div style="position: absolute; left: 19%; border-radius: 50%; overflow: hidden; height: 5%; width: 2.5%; top: 60%; border: 2px solid white"><i class="fa-solid fa-graduation-cap fa-2x" style="color: #ffffff;"></i></div>
-                        <h1 class="forcur"> <?php echo $Formacion_Curriculum; ?></h1>
                         <div style="position: absolute; left: 19%; border-radius: 50%; overflow: hidden; height: 5%; width: 2.5%; top: 49%; border: 2px solid white"><i class="fa-solid fa-at fa-2x" style="color: #ffffff; margin-left: 2.5px; margin-top: 2px;"></i></div>
                         <h1 class="corcur"> <?php echo $Correo_Curriculum; ?></h1>
                         <div style="position: absolute; left: 19%; height: 4.8%; width: 2.3%; border: 2px solid white; top: 36%; border-radius: 50%; overflow: hidden"><i class="fa-solid fa-phone-volume fa-2x" style="color: #ffffff;"></i></div>

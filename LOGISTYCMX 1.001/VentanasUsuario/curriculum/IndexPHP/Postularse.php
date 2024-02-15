@@ -23,23 +23,6 @@
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Nosotros</a></li>    
             </div>
         </section>
-
-        <table>
-        <thead>
-            <tr>
-                <th>N</th>
-                <th>Vacante</th>
-                <th>Descripcion</th>
-            </tr>
-        </thead>
-
-        <tbody>
-        <?php
-        include("..\FuncionesPHP\GeneradorVacantes.php");
-        ?>
-        </tbody>
-    </table>
-
         <div class="container-boss">
             <div class="container">
                 <img src="/LOGISTYCMX 1.001/VentanasUsuario/Landing/assets/refacciones-auto.jpg" alt="">
@@ -146,11 +129,12 @@
                     </div>
     
                     <div class="form-control">
-                        <label>Ingresa una foto tuya</label>
+                        <label>Ingresa tu curriculum PDF</label>
                         <input 
                             type="file" 
-                            name="fieldfoto" 
-                            id="foto"
+                            name="archivo_pdf" 
+                            id="archivo_pdf"
+                            accept="application/pdf"
                         >
                     </div>  
                     <button type="submit" name="btnEnviarCurriculum">Enviar curriculum</button>   
