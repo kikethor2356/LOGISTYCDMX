@@ -16,12 +16,16 @@ if ($result > 0) {
         $NombreProducto_Carrito = $data ["NombreProducto_Carrito"];
         $PrecioProducto_Carrito = $data ["PrecioProducto_Carrito"];
         $CantidadProducto_Carrito = $data ["cantidadProductos_Carrito"];
+        $IDProducto_Carrito = $data ["id_Carrito"];
         $subTOTAL = $CantidadProducto_Carrito * $PrecioProducto_Carrito;
 
         
 ?>
         <tr>
-            <td><button>Eliminar</button></td>
+            <form method="POST" action="..\FuncionesPHP\BorrarProductoCarrito.php">
+                <td><button type="submit" value="<?php echo $IDProducto_Carrito;?>" name="btnEliminarCarrito">Eliminar</button></td>
+            </form>
+
             <td><img src="https://mundorepuesto.com/imgparts/parts/DOR/1591166.jpg" alt=""></td>
             <td><?php echo $NombreProducto_Carrito;?></td>
             <td>$<?php echo $PrecioProducto_Carrito;?></td>
