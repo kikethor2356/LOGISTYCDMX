@@ -41,15 +41,12 @@
         <td>Subtotal</td>
         </tr>
         </thead>
+
         <tbody>
-        <tr>
-            <td><i class="fa-light fa-trash"></i></td>
-            <td><img src="https://mundorepuesto.com/imgparts/parts/DOR/1591166.jpg" alt=""></td>
-            <td>Faro izquierdo toyota</td>
-            <td>$2499.00</td>
-            <td><input type="number" value="1"></td>
-            <td>$2499.00</td>
-        </tr>
+        <?php 
+        include("..\FuncionesPHP\GeneradorListaCarrito.php");
+        ?>
+        
         </tbody>
         </table>
         </section>
