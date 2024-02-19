@@ -26,13 +26,7 @@ include($document_root . '\CONEXION\conexion.php');
     
     
             $FechaNacimientoNormal = trim($_POST['field_FechaNacimientoC']);
-            $fechaConvertida = str_replace("/", "-", $FechaNacimientoNormal);
-            $fechaObj = DateTime::createFromFormat('d-m-Y', $fechaConvertida);
-
-
-    
-            //esta es la fecha ya chida que aparece en el formato  AAAA-MM-DD
-            $fechaFormateada = $fechaObj->format('Y-m-d');
+        
     
     
             $fecha = date("y-m-d");
@@ -65,7 +59,7 @@ if (!empty($nombre_archivo) && !empty($temporal)) {
     
                 
                 $consulta = "INSERT INTO curriculum (Nombres_CURRICULUM, ApellidoP_CURRICULUM, ApellidoM_CURRICULUM, Vacante_Curriculum, Correo_CURRICULUM, telefono_CURRICULUM, FechaNacimiento_CURRICULUM, FechaEnvio_CURRICULUM , archivo_pdf  )
-                        VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum','$seleccionVacante', '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$fechaFormateada', '$fecha' , '$ruta')";
+                        VALUES('$FielNombre_Curriculum', '$FielApellidoP_Curriculum', '$FielApellidoM_Curriculum','$seleccionVacante', '$FielCorreo_Curriculum' , '$FielTelefono_Curriculum', '$FechaNacimientoNormal', '$fecha' , '$ruta')";
     
                 $resultado = mysqli_query($conex, $consulta);
                 if ($resultado) {
