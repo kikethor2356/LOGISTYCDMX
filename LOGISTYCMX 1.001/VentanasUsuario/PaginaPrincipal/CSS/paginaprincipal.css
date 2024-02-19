@@ -293,3 +293,54 @@ left: 0;
     font-size: 15px;
 }
 
+.btnlis{
+    position: relative; 
+    left: 2%; 
+    margin-bottom: 1%;
+    border-radius: 5px;
+    width: 3%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.btnlis:hover{
+    cursor: pointer;
+    border-color: red;
+}
+
+.btnlis:focus{
+    border-color: red;
+}
+
+.btncua{
+    position: relative; 
+    left: 2%; 
+    border-radius: 5px;
+    width: 3%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.btncua:hover{
+    cursor: pointer;
+    border-color: red;
+}
+
+.btncua:focus{
+    border-color: red;
+}
+
+.btnnam{
+    position: relative;
+    color: black;
+    border-radius: 3px;
+    max-width: 110%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 2%;
+}
+
+.btnnam:hover{
+    cursor: pointer;
+    border-color: red;
+}

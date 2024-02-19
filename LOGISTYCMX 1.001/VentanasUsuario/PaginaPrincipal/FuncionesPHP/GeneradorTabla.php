@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
+
 <?php
 use LDAP\Result;
 
@@ -16,7 +18,7 @@ if ($result > 0) {
 
             <th>
             <form method="post" action="detail-product.php">
-            <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto"> <?php echo $data['NombreCat1'] ?></button>
+            <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto" class="btnnam"> <?php echo $data['NombreCat1'] ?></button>
 
             
             </th>
