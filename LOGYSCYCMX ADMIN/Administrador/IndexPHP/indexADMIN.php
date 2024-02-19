@@ -52,6 +52,10 @@
                     <button class="btn" onclick="mostrarmain5()">Vacantes</button>
                 </div>
 
+                <div class="DIVbtn6">
+                    <button class="btn" onclick="mostrarmain6()">----</button>
+                </div>
+
             </div>
 
         </nav>
@@ -177,16 +181,18 @@
             <div class="main5vacantes" id="main5">
 
             <div class="container">
-            <form class="mainForm" method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php">
+            <form class="mainForm" method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php" enctype="multipart/form-data">
                     <div class="form-control">
                         <label>Nombre de la vacante</label>
-                        <input type="text" name="FiedlNombreVacante" placeholder="Escribe El Nombre Vacante">
+                        <input type="text" name="FieldNombreVacante" placeholder="Escribe El Nombre Vacante">
                     </div>
 
                     <div class="form-control">
                         <label>Descripcion</label>
                         <input type="text" name="FieldDescripcionVacante" placeholder="Escribe La Descripcion">
                     </div>
+
+                    <input type="file" name="archivo" id="archivo" >
                     
                     <button type="submit" name="btnAltaVacante">Dar de alta</button>
                 </form>
@@ -214,6 +220,13 @@
                     </tbody>
 
                 </table>
+            </div>
+
+
+            <div class="main6" id="main6">
+
+              
+                    
             </div>
 
 

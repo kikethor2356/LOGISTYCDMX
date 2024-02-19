@@ -5,12 +5,14 @@ function mostrarmain1(){
     var  main3 = document.getElementById("main3");
     var  main4 = document.getElementById("main4");
     var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
 
     main1.style.display = "block";
     main2.style.display = "none";
     main3.style.display = "none";
     main4.style.display = "none";
     main5.style.display = "none";
+    main6.style.display = "none";
 
 }
 
@@ -20,6 +22,8 @@ function mostrarmain2(){
     var  main3 = document.getElementById("main3");
     var  main4 = document.getElementById("main4");
     var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
+
 
 
     main1.style.display = "none";
@@ -27,6 +31,7 @@ function mostrarmain2(){
     main3.style.display = "none";
     main4.style.display = "none";
     main5.style.display = "none";
+    main6.style.display = "none";
     
 }
 
@@ -37,6 +42,8 @@ function mostrarmain3(){
     var  main3 = document.getElementById("main3");
     var  main4 = document.getElementById("main4");
     var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
+
 
 
     main1.style.display = "none";
@@ -44,6 +51,7 @@ function mostrarmain3(){
     main3.style.display = "block";
     main4.style.display = "none";
     main5.style.display = "none";
+    main6.style.display = "none";
 }
 
 function mostrarmain4(){
@@ -53,6 +61,9 @@ function mostrarmain4(){
     var  main3 = document.getElementById("main3");
     var  main4 = document.getElementById("main4");
     var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
+    
+
 
 
     main1.style.display = "none";
@@ -60,6 +71,7 @@ function mostrarmain4(){
     main3.style.display = "none";
     main4.style.display = "block";
     main5.style.display = "none";
+    main6.style.display = "none";
 }
 
 function mostrarmain5(){
@@ -68,6 +80,8 @@ function mostrarmain5(){
     var  main3 = document.getElementById("main3");
     var  main4 = document.getElementById("main4");
     var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
+
 
 
     main1.style.display = "none";
@@ -75,6 +89,26 @@ function mostrarmain5(){
     main3.style.display = "none";
     main4.style.display = "none";
     main5.style.display = "block";
+    main6.style.display = "none";
+
+}
+
+function mostrarmain6(){
+    var  main1 = document.getElementById("main1");
+    var  main2 = document.getElementById("main2");
+    var  main3 = document.getElementById("main3");
+    var  main4 = document.getElementById("main4");
+    var  main5 = document.getElementById("main5");
+    var  main6 = document.getElementById("main6");
+
+
+
+    main1.style.display = "none";
+    main2.style.display = "none";
+    main3.style.display = "none";
+    main4.style.display = "none";
+    main5.style.display = "none";
+    main6.style.display = "block";
 
 }
 

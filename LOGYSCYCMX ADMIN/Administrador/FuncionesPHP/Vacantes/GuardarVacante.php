@@ -1,32 +1,45 @@
 <?php
 
-$directorioActual = dirname(__DIR__);
-$document_root = $_SERVER['DOCUMENT_ROOT'];
-include($document_root . '\CONEXION\conexion.php');
+
+if (isset($_FILES['archivo'])){
+
+	$directorioActual = dirname(__DIR__);
+	$document_root = $_SERVER['DOCUMENT_ROOT'];
+	$document_root1 = $_SERVER['DOCUMENT_ROOT'];
+	include($document_root . '\CONEXION\conexion.php');
+
+	extract($_POST);
+	$nombre_vacante = $_POST['FieldNombreVacante'];
+	$descripcion_vacante = $_POST['FieldDescripcionVacante'];
+	$fechaActual = date("Y-m-d");
+	$document_root1 = str_replace('\\', '/', $document_root1);
+	$carpeta_destino= $document_root1."/LOGISTYCMX 1.001/VentanasUsuario/Vacantes/ArchivosVacantes/";
+
+	$nombre_archivo = basename($_FILES["archivo"] ["name"]);
+	$extension = strtolower(pathinfo($nombre_archivo, PATHINFO_EXTENSION));
+
+	if (move_uploaded_file($_FILES['archivo'] ['tmp_name'], $carpeta_destino . $nombre_archivo)){
+		include($document_root . '\CONEXION\conexion.php');
+		$sql = "INSERT INTO vacantes (Nombre_Vacante, Archivo_Vacante, Descripcion_Vacante, FechaSubia_Vacante) VALUES ('$nombre_vacante', '$nombre_archivo', '$descripcion_vacante', '$fechaActual')";
+		$resultado = mysqli_query($conex, $sql);
+		if ($resultado){
+			
+			echo "todo bien";
+
+		}
+		else{
+			echo "no jalo";
+		}
+
+		
+	}
+
+
+}else{
+	echo "valio cono";
+}
+
         
 
 
-
-if (isset($_POST['btnAltaVacante'])) {
-	
-	$nomVacante = mysqli_real_escape_string($conex, $_POST['FiedlNombreVacante']);
-	$DescripcionVacante = mysqli_real_escape_string($conex, $_POST['FieldDescripcionVacante']);
-    $fecha = date("y-m-d");
-	
-	if (empty($nomVacante) || empty($DescripcionVacante) || empty($fecha) ) {
-		if (empty($nomVacante)) {
-			echo "<font color='red'>ERROR Nombre de la vacante vacio.</font><br/>";
-		}
-		
-		if (empty($DescripcionVacante)) {
-			echo "<font color='red'>ERROR Descripcion de la vacante esta vacio.</font><br/>";
-		}	
-		
-	} else { 
-		$result = mysqli_query($conex, "INSERT INTO  vacantes (`Nombre_Vacante`, `Descripcion_Vacante`, `FechaSubia_Vacante`) VALUES ('$nomVacante', '$DescripcionVacante', '$fecha')");
-		
-		header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
-	}
-		die($conex);
-}
 ?>

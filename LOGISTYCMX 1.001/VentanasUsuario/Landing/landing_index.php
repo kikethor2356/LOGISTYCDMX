@@ -14,6 +14,7 @@
     
             <div id="Navbar">
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.php">Postularse</a></li>
+                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Vacantes/IndexPHP/IndexVacantes.php">Vacantes</a></li>  
                 <li><a href="#Contactanos">Contactanos</a></li>
                 <li><a href="#Nosotros">Nosotros</a></li>    
             </div>
