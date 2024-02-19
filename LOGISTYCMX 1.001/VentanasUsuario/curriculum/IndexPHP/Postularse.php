@@ -12,11 +12,12 @@
 
     <body>
 
-        <section id="header">
+    <section id="header">
             <a href="#"><img src="" class="logo" alt="Logo"></a>
     
             <div id="Navbar">
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.php">Postularse</a></li>
+                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Vacantes/IndexPHP/IndexVacantes.php">Vacantes</a></li>  
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Contactanos</a></li>
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Nosotros</a></li>    
             </div>

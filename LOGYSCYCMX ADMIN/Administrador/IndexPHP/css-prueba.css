@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-width: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 95%;
+    background-color: #CA0101;
+    border-left: 10px solid #CA0101;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: -14px 4px 17px -6px rgba(219,219,219,1);
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 5px;
+}
+
+.navigation ul li:hover,
+.navigation ul li.active
+{
+    background-color: #fff;
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active
+{
+    color: #CA0101;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.navigation ul li a .icon i{
+    font-size: 1.75rem;
+}
+
+.navigation ul li a .tittle{
+position: relative;
+display: block;
+padding: 0 10px;
+height: 60px;
+line-height: 60px;
+text-align: start;
+white-space: nowrap;
+}
+
+
+
+
+.navigation ul li:hover a::before
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px #ffffff;
+    pointer-events: none;
+}
+
+.navigation ul li:hover a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px #ffffff;
+    pointer-events: none;
+}
+
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background-color: #fff;
+    transition: 0.5s;
+    
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.main form{
+    display: grid;
+    background-color: #fff;
+    color: #910606;
+    padding: 20px;
+    margin: 0 auto;
+    width: 600px;
+    box-shadow: 0px 0px 48px -17px rgba(84,84,84,1);
+    border-radius: 25px;
+}
+
+.main form h1{
+    text-align: center;
+    color: #CA0101;
+    margin-bottom: 30px;
+}
+
+.main input,select{
+    border: 0;
+    outline: none;
+}
+
+.main input, select{
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.main input,select{
+    margin-bottom: 20px;
+}
+
+.main input[type="submit"]{
+    border-radius: 25px;
+    color: #CA0101;
+}
+
+.main input[type="submit"]:hover{
+    background-color: #CA0101;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.tabla-vacantes table {
+    width: 80%;
+    padding: 10px;
+    
+  }
+  
+.tabla-vacantes td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+.tabla-vacantes tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+.tabla-vacantes th {
+    background-color: #dddddd;
+  }
+
+  .contenedorCurriculums{
+    background-color: rgb(161, 202, 137);
+    position: relative;
+    width: 100%;
+    height: 99.5%;
+    left: 0%;
+    top: -10%;
+}
+  
+
+.container1{
+    margin-bottom: 10px;
+}
+
+.main4curriculum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 800px;
+
+}
+
+
+
+
+
+
+
+
