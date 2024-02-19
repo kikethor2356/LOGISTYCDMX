@@ -44,8 +44,9 @@ include($document_root . '\CONEXION\conexion.php');
     </section>
 
     <section>
-    <button onclick="MostrarLista()">Lista</button>
-    <button onclick="MostrarCuadricula()">Cuadricula</button>
+        <br>
+    <button onclick="MostrarLista()" class="btnlis"><i class="fa-solid fa-list-ul fa-3x" style="color: #000000;"></i></button>
+    <button onclick="MostrarCuadricula()" class="btncua"><i class="fa-solid fa-border-all fa-3x" style="color: #000000; font-size: 300%; width: -10%; left: 0%"></i></button>
     </section>    
 
 

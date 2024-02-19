@@ -28,7 +28,7 @@
         <h4>Preventa</h4>
         <h2>Precios especiales</h2>
         <h1>En nuestros nuevos productos</h1>
-        <p>compra o contactanos para que seas parte de LOGISTYCMX</p>
+        <p style="color: white;">Compra o contactanos para que seas parte de LOGISTYCMX</p>
         <button>Compra ahora</button>
     </section>
 
@@ -55,8 +55,8 @@
         <h2>Nuestros Productos</h2>
         <p>Todo lo que necesites en un click</p>
 
-        <button onclick="MostrarLista()">Lista</button>
-        <button onclick="MostrarCuadricula()">Cuadricula</button>
+        <button onclick="MostrarLista()" class="btnlis"><i class="fa-solid fa-list-ul fa-3x" style="color: #000000;"></i></button>
+        <button onclick="MostrarCuadricula()" class="btncua"><i class="fa-solid fa-border-all fa-3x" style="color: #000000; font-size: 300%; width: -10%; left: 0%"></i></button>
         
 
     <section id="product1" class="section-p1" style="display: none;">
