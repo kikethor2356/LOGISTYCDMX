@@ -23,8 +23,8 @@ if ($conex){
                         $ID_Curriculum = $row["Contador"]; 
                         $Vacante_Curriculum = $row["Vacante_Curriculum"];
 
-
-                        include ('C:\xampp\htdocs\LOGISTYCDMX\LOGISTYCMX 1.001\VentanasUsuario\curriculum\FuncionesPHP\MostrarCurriculum.php');
+                        
+                        include ( $document_root .'\LOGISTYCMX 1.001\VentanasUsuario\curriculum\FuncionesPHP\MostrarCurriculum.php');
 
                         
                         
@@ -59,7 +59,7 @@ if ($conex){
 
 
         }
-        
+       
 
 }
 
