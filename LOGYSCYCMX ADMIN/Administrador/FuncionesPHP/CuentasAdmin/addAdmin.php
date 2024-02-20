@@ -44,7 +44,11 @@ if (isset($_POST['submitAdmin'])) {
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO  Admin (`Nombre`, `Apellido`,`Correo`,`Password_Admin`) VALUES ('$nomAdm', '$apellidoAdm', '$hash_correo_admin','$hash_contrasena_admin')");
 		
-		header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+		?><script> alert('El administrador fue dado de alta de manera correcta'); 
+		window.location.href = '../../IndexPHP/alta-admin.php';
+	   </script><?php
+	   
+	   exit(); 
 	}
 		die($conex);
 }

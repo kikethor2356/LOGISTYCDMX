@@ -13,8 +13,12 @@ if($conex){
 
         if($resultadoEliminar){
 
-            //Se elimino
-           // header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            ?><script> 
+            //alert('producto borrado del carrito.'); 
+            window.location.href = '../../PaginaPrincipal/IndexPHP/cart.php';
+           </script><?php
+           
+           exit(); 
         }
         else{
 

@@ -48,7 +48,11 @@ if (isset($_POST['submit'])) {
 		// Insert data into database
 		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `NumSerie`, `Imagen`, `AmarreAldo`,`Marca`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$numSerie', '$imagen', '$amarreAldo','$marca')");
 		
-		header ("Location: $directorioActual \LOGYSCYCMX ADMIN\indexLOGIN.HTML");
+		?><script> alert('El producto se agrego correctamente.'); 
+		window.location.href = '../../IndexPHP/Gestion-productos.php';
+	   </script><?php
+	   
+	   exit(); 
 
 	}
 	die($conex);

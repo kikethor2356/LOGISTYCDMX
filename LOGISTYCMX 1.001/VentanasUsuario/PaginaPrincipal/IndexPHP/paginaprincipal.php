@@ -1,4 +1,10 @@
+<?php
+/* 
+session_start();
 
+if($_SESSION['CorreoIngreso']){
+
+ */ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -115,3 +121,13 @@
 </body>
 
 </html>
+
+<?php 
+/*
+}
+
+else{
+    echo 'inicia sesion ';
+}
+*/
+?>

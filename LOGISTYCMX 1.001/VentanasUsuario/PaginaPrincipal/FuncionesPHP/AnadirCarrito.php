@@ -24,7 +24,7 @@ if($conex){
         $resultado = mysqli_query($conex, $consulta);
         if ($resultado) {
 
-            //header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            header ("Location: $document_root\LOGISTYCMX 1.001\PaginaPrincipal\detail-product.php\detail-product.php");
             
        
         } else {

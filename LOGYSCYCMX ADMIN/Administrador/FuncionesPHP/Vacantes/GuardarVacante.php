@@ -24,11 +24,19 @@ if (isset($_FILES['archivo'])){
 		$resultado = mysqli_query($conex, $sql);
 		if ($resultado){
 			
-			echo "todo bien";
+			?><script> alert('Se agrego la vacante de forma correcta'); 
+			window.location.href = '../../IndexPHP/Capital-Humano.php';
+		   </script><?php
+		   
+		   exit(); 
 
 		}
 		else{
-			echo "no jalo";
+			?><script> alert('Hubo un error al guardar la vacante'); 
+			window.location.href = '../../IndexPHP/Capital-Humano.php';
+		   </script><?php
+		   
+		   exit(); 
 		}
 
 		

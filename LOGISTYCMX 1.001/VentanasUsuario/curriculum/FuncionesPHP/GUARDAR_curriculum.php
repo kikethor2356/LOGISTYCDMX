@@ -46,7 +46,7 @@ if (!empty($nombre_archivo) && !empty($temporal)) {
     $ruta = $carpeta . "/" . $nombre_archivo;
 
     if (move_uploaded_file($temporal, $ruta)) {
-        echo "El archivo se ha cargado correctamente.";
+       // echo "El archivo se ha cargado correctamente.";
 
     } else {
         echo "Hubo un error al intentar cargar el archivo.";
@@ -65,7 +65,12 @@ if (!empty($nombre_archivo) && !empty($temporal)) {
                 if ($resultado) {
                     //include('indexLOGIN.html');
                     
-                    echo "<script> alert('curriculum creado'.'$fechaFormateada'); </script>";
+                    ?><script> alert('Su curriculum ha sido enviado de manera correcta.'); 
+                    window.location.href = '../../curriculum/IndexPHP/Postularse.php';
+                   </script><?php
+                   
+                   exit(); 
+                    //echo "<script> alert('curriculum creado'.'$fecha'); </script>";
     
                 } else {
                     ?>

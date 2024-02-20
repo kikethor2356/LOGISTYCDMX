@@ -12,15 +12,22 @@ if($conex){
         $eliminar = "DELETE FROM vacantes WHERE id_Vacante = '$IdVacanteBorrar' ";
         $resultadoEliminar = mysqli_query($conex, $eliminar);
 
-        if($resultadoEliminar){
+        if($resultadoEliminar){   
 
-            //Se elimino
-            header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            ?><script> alert('La vacante se elimino de forma correcta'); 
+             window.location.href = '../../IndexPHP/Capital-Humano.php';
+            </script><?php
+            
+            exit(); 
         }
         else{
 
-            //NO Se elimino
-            header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            
+            ?><script> alert('Hubo un error al eliminar la vacante intentelo de nuevo.'); 
+             window.location.href = '../../IndexPHP/Capital-Humano.php';
+            </script><?php
+            
+            exit(); 
 
         }
     }

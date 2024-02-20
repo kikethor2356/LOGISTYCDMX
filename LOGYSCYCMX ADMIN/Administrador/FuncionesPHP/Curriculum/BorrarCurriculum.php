@@ -16,12 +16,20 @@ if($conex){
         if($resultadoEliminar){
 
             //Se elimino
-            header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            ?><script> alert('El curriculum se elimino correctamente.'); 
+            window.location.href = '../../IndexPHP/Capital-Humano.php';
+           </script><?php
+           
+           exit(); 
         }
         else{
 
             //NO Se elimino
-            header ("Location: $document_root\LOGYSCYCMX ADMIN\Administrador\IndexPHP\indexADMIN.php");
+            ?><script> alert('Hubo un error al borrar el curriculum intentelo de nuevo.'); 
+            window.location.href = '../../IndexPHP/Capital-Humano.php';
+           </script><?php
+           
+           exit(); 
 
         }
     }
