@@ -1,4 +1,7 @@
+
 <?php
+
+
 
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
@@ -30,7 +33,21 @@ if ($conex){
 
                                 <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\BorrarVacante.php">
                                     <th>
-                                        <button name="btnEliminarVacante" value="<?php echo $Id_Vacante; ?>">Eliminar</button>
+                                        <button 
+                                            name="btnEliminarVacante" 
+                                            value="<?php echo $Id_Vacante; ?>"
+                                            style=
+                                            "border-radius: 25px;
+                                            border: none;
+                                            color: #fff;
+                                            background-color: #CA0101;
+                                            padding:10px 15px;
+                                            cursor: pointer;
+                                            "
+                                            
+                                            >
+                                            Eliminar
+                                        </button>
                                     </th>    
                                 </form>    
                             </tr>

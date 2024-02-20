@@ -189,35 +189,40 @@ white-space: nowrap;
     cursor: pointer;
 }
 
+.tabla-vacantes{
+    position: absolute;
 
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .tabla-vacantes table {
-    width: 80%;
+    width: 90%;
     padding: 10px;
+    width: 150vh;
     
   }
   
 .tabla-vacantes td, th {
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #CA0101;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    
   }
   
 .tabla-vacantes tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: transparent;
   }
   
 .tabla-vacantes th {
-    background-color: #dddddd;
+    background-color: transparent;
   }
 
   .contenedorCurriculums{
-    background-color: rgb(161, 202, 137);
-    position: relative;
-    width: 100%;
-    height: 99.5%;
-    left: 0%;
-    top: -10%;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
   
 
@@ -231,8 +236,11 @@ white-space: nowrap;
     justify-content: center;
 
     width: 800px;
-
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
+
+
 
 
 
