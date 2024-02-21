@@ -33,11 +33,11 @@
         <table width="100%">
         <thead>
         <tr>
-        <td>Remove</td>
-        <td>Image</td>
-        <td>Product</td>
-        <td>Price</td>
-        <td>Quantity</td>
+        <td>Eliminar</td>
+        <td>Imagen</td>
+        <td>Producto</td>
+        <td>Precio</td>
+        <td>Cantidad</td>
         <td>Subtotal</td>
         </tr>
         </thead>
@@ -53,15 +53,15 @@
   
         <section id="cart-add"  class="section-p1">
             <div id="subtotal">
-                <h3>Cart Totals</h3>
+                <h3>TOTAL</h3>
                 <table>
                 <tr>
-                <td>Cart Subtotal</td>
+                <td>Subtotal</td>
                 <td>$ 335</td>
                 </tr>
                 <tr>
-                <td>Shipping</td>
-                <td>Free</td>
+                <td>Envio</td>
+                <td>GRATIS</td>
                 </tr>
                 <tr>
                 <td><strong>Total</strong></td>

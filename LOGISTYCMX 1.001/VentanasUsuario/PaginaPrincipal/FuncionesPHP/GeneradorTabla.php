@@ -17,7 +17,7 @@ if ($result > 0) {
         <tr>
 
             <th>
-            <form method="post" action="detail-product.php">
+            <form method="post" action="detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>">
             <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto" class="btnnam"> <?php echo $data['NombreCat1'] ?></button>
 
             
@@ -31,6 +31,8 @@ if ($result > 0) {
             <th>$<?php echo $data['PrecioCat1'] ?></th>
             <th>15</th>
             <th><input type="number"></th>
+
+            </form>
 
         </tr>
 

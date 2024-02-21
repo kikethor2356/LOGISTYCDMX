@@ -14,18 +14,20 @@ if ($result > 0) {
 
         <div class="pro">
 
-            <form method="post" action="detail-product.php">
-            <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
+        <form method="post" action="detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>">
+
+        <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
             <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
             <div class="des">
                 <span><?php echo $data['Marca'] ?></span>
                 <h5><?php echo $data['NombreCat1'] ?></h5>
                 <h4>$<?php echo $data['PrecioCat1'] ?></h4>
+                <h4><?php echo $data['ContadorCat1'] ?></h4>
             </div>
 
             </button>
 
-            <form>
+    </form>
 
 
             <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></i></a>

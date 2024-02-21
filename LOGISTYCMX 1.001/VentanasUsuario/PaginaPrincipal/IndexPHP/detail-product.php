@@ -6,11 +6,11 @@ include($document_root . '\CONEXION\conexion.php');
 
 if ($conex){
 
-    if (isset($_POST['btnDetalleProducto'])) {
-
-        $IDbuscarProducto = trim($_POST['btnDetalleProducto']);
-
-        $consulta = "SELECT * FROM productocat1 WHERE ContadorCat1='$IDbuscarProducto'";
+    if(isset($_GET['ID_P'])) {
+        $ID_P = $_GET['ID_P'];
+        
+        
+        $consulta = "SELECT * FROM productocat1 WHERE ContadorCat1='$ID_P'";
         $resultado = mysqli_query($conex,$consulta);
         if ($resultado){
     
@@ -24,7 +24,11 @@ if ($conex){
     
                 }
             }
-        }
+
+    } else {
+        echo "No se ha proporcionado el valor de ID_P";
+    }
+        
 
     }    
    

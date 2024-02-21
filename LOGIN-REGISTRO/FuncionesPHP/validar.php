@@ -42,7 +42,10 @@ if($filas)
     </script>
     <?php
 
-    header("location: \LOGISTYCMX 1.001\VentanasUsuario\PaginaPrincipal\IndexPHP\paginaprincipal.php");
+header("location: \LOGISTYCMX 1.001\VentanasUsuario\PaginaPrincipal\IndexPHP\paginaprincipal.php");
+
+
+
 
 }
 
@@ -66,9 +69,10 @@ else
         //alert("Usuario encontrado, Bienvenido.");
         </script>
         <?php
-    
-        header("location: ..\LOGISTYCDMX\LOGYSCYCMX ADMIN\IndexPHP\indexADMIN.php");
 
+header("location: \LOGYSCYCMX ADMIN\Administrador\IndexPHP\Gestion-productos.php");
+    
+   
     }
     else{
         header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
