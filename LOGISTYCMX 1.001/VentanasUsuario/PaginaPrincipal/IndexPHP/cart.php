@@ -57,7 +57,7 @@
                 <table>
                 <tr>
                 <td>Subtotal</td>
-                <td>$ 335</td>
+                <td> $<?php echo $SubTotalTODO; ?></td>
                 </tr>
                 <tr>
                 <td>Envio</td>
@@ -65,7 +65,7 @@
                 </tr>
                 <tr>
                 <td><strong>Total</strong></td>
-                <td><strong>$ 335</strong></td>
+                <td><strong>$ <?php $TotalTODO = $SubTotalTODO; echo $TotalTODO; ?></strong></td>
                 </tr>
                 </table>
             </div>

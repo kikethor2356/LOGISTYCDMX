@@ -3,7 +3,7 @@
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\CONEXION\conexion.php');
-
+$SubTotalTODO = 0;
 session_start();
 $CorreoUsuario = $_SESSION['CorreoIngreso']; 
 $hash_buscadorCorreoUsuario = hash('sha256', $CorreoUsuario);
@@ -19,6 +19,7 @@ if ($result > 0) {
         $IDProducto_Carrito = $data ["id_Carrito"];
         $subTOTAL = $CantidadProducto_Carrito * $PrecioProducto_Carrito;
 
+
         
 ?>
         <tr>
@@ -31,7 +32,10 @@ if ($result > 0) {
             <td>$<?php echo $PrecioProducto_Carrito;?></td>
             <td><input type="number" value="<?php echo $CantidadProducto_Carrito;?>"></td>
             <td>$<?php echo $subTOTAL; ?></td>
+
+            <?php $SubTotalTODO = $SubTotalTODO + $subTOTAL;?>
         </tr>
+
 <?php
 
     }
