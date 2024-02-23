@@ -19,7 +19,7 @@
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.php">Postularse</a></li>
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Vacantes/IndexPHP/IndexVacantes.php">Vacantes</a></li>  
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Contactanos</a></li>
-                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php">Nosotros</a></li>    
+                <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/Index_Nosotros.php">Nosotros</a></li>    
             </div>
         </section>
         <div class="container-boss">
