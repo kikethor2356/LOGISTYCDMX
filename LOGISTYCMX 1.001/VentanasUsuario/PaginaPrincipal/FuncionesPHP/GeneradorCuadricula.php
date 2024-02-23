@@ -22,7 +22,7 @@ if ($result > 0) {
                 <span><?php echo $data['Marca'] ?></span>
                 <h5><?php echo $data['NombreCat1'] ?></h5>
                 <h4>$<?php echo $data['PrecioCat1'] ?></h4>
-                <h4><?php echo $data['ContadorCat1'] ?></h4>
+                
             </div>
 
             </button>
@@ -30,7 +30,15 @@ if ($result > 0) {
     </form>
 
 
-            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></i></a>
+    <form method="post" action="../FuncionesPHP/AnadirCarritoDESDEcuadricula.php">
+        <input type="hidden" name="hiddenNombreProducto" value="<?php echo $data['NombreCat1'] ?>">
+        <input type="hidden" name="hiddenPrecioProducto" value="<?php echo $data['PrecioCat1'] ?>">
+        <input type="number" name='CantidadProductosCarrito'>
+        <button type="submit" class="fa-solid fa-cart-shopping cart" name="btnAnadirCarritoCuadricula" value="<?php echo $data['ContadorCat1']?>"></button>
+    </form>    
+
+
+            
         </div>
 
 <?php

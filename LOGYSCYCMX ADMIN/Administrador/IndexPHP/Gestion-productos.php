@@ -124,6 +124,9 @@
 
                         <label>Numero de Serie</label>
                         <input type="text" name="NumSerie" required>
+
+                        <label>Existencia</label>
+                        <input type="number" name="Existencia" required>
                         
                        
                         <label for="marca">Selecciona una marca de carro:</label>

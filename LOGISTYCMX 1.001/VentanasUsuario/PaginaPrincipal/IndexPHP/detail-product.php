@@ -20,6 +20,7 @@ if ($conex){
                         $PrecioCat1_Producto = $row["PrecioCat1"];
                         $Marca_Producto = $row["Marca"];
                         $Id_Producto = $row["ContadorCat1"]; 
+                        $Existencia_Producto = $row["Existencia_Producto"];
                 
     
                 }
@@ -91,6 +92,11 @@ if ($conex){
             <button class="normal" type="submit" name="btnAnadirCarrito" value="<?php echo $Id_Producto; ?>">Añadir al carrito</button>
         </form>
 
+
+        <h5>Existencia</h5>
+        <h6>
+        <?php echo $Existencia_Producto; ?>
+        </h6>
 
 
 

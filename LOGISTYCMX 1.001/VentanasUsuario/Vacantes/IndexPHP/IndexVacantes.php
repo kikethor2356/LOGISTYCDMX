@@ -10,7 +10,7 @@
 <body>
 
 <section id="header">
-            <a href="#"><img src="" class="logo" alt="Logo"></a>
+<a href="/LOGISTYCMX 1.001/VentanasUsuario/Landing/landing_index.php"><img src="" class="logo" alt="Logo"></a>
     
             <div id="Navbar">
                 <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/curriculum/IndexPHP/Postularse.php">Postularse</a></li>

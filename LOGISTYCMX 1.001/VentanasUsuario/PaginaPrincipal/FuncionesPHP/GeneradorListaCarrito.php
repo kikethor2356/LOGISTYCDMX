@@ -30,8 +30,9 @@ if ($result > 0) {
             <td><img src="https://mundorepuesto.com/imgparts/parts/DOR/1591166.jpg" alt=""></td>
             <td><?php echo $NombreProducto_Carrito;?></td>
             <td>$<?php echo $PrecioProducto_Carrito;?></td>
-            <td><input type="number" value="<?php echo $CantidadProducto_Carrito;?>"></td>
+            <td><input type="number" value="<?php echo $CantidadProducto_Carrito;?>" id="cantidad"></td>
             <td>$<?php echo $subTOTAL; ?></td>
+
 
             <?php $SubTotalTODO = $SubTotalTODO + $subTOTAL;?>
         </tr>
