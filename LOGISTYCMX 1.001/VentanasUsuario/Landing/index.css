@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(assets/refacciones-auto.jpg);    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.fa-solid{
+    color: white;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-section{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+   
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+
+.text-section h1{
+    font-size: 61px;
+}
+
+.text-section p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-hero{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-hero:hover{
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.301);
+    transition: 1s;
+}
+
+.sources{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+h1{
+    
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #000635;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.offers{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.exclusive{
+    flex-basis: 31%;
+    background: #353b65;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box; 
+    transition: 0.5s;
+}
+
+.exclusive h3{
+    text-align: center;
+    font-weight: 600;
+
+    margin: 10px 0;
+    color: #fff;
+}
+
+.exclusive p{
+    color: #fff;
+}
+
+.exclusive:hover{
+box-shadow: 0 0 20px 0px rgba(14, 35, 120, 0.479);
+}
+
+
+
+.contact{
+    width: 100%;
+    height: 500px;
+    background: #353b65;
+    
+   
+
+}
+
+.contact .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.contact .content .left-side{
+    width: 25%;
+    height: 100%;
+}
+
+.content .left-side{
+    margin: 14px;
+    text-align: center;
+}
+
+
+.content .left-side i{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.content .left-side h3,
+.content .left-side p{
+    color: #fff;
+}
+
+.contact .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+    
+}
+
+.content .right-side .cont h1{
+    margin-top: 30px;
+}
+
+.content .right-side .cont h1,
+.content .right-side .cont p{
+    
+    color: #fff;
+}
+
+.right-side .inputbox{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .inputbox input,
+.right-side .inputmessage textarea{
+    height: 100%;
+    width: 80%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f0f1f8;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .inputmessage textarea{
+    min-height: 110px;
+    margin-top: 10px;
+
+}
+
+.right-side .btn-send button{
+    color: #000635;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 8px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-send button:hover{
+    background: #9c9ead;
+}
+
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0px rgba(14, 35, 120, 0.479);
+    padding: 50px;
+    
+}
+
+.about h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 300px;
+}
+
+.about-of h1{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.Valores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Valores{
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    color:#000635;
+    text-align: center;
+}
+
+.Valores p{
+    
+    color: #353b65;
+    font-size: 18px;
+}
+
+.info{
+    display: inline-block;
+    width: 200px;
+}
+
+.valores-of{
+    margin-top: 100px;
+}
+
+.valores-of h1{
+    text-align: center;
+   font-size: 60px;
+}
