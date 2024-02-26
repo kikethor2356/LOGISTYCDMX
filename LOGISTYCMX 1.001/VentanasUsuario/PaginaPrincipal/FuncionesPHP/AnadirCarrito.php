@@ -5,9 +5,15 @@ $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\CONEXION\conexion.php');
 
 
+
+
 if($conex){
 
+
+
     if (isset($_POST['btnAnadirCarrito'])){
+        
+
         $IDbtnProducto = $_POST['btnAnadirCarrito'];
         $CantidadProducto = $_POST['CantidadProductosCarrito'];
         $NombreProducto = $_POST['hiddenNombreProducto'];
@@ -24,6 +30,7 @@ if($conex){
         $resultado = mysqli_query($conex, $consulta);
         if ($resultado) {
 
+            
             header ("Location: $document_root\LOGISTYCMX 1.001\PaginaPrincipal\detail-product.php\detail-product.php");
             
        

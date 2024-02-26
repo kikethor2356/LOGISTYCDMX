@@ -13,6 +13,8 @@ if (isset($_POST['submit'])) {
 	$numSerie = mysqli_real_escape_string($conex, $_POST['NumSerie']);
 	$amarreAldo = mysqli_real_escape_string($conex, $_POST['AmarreAldo']);
 	$marca = mysqli_real_escape_string($conex, $_POST['Marca']);
+	$Existencia = mysqli_real_escape_string($conex, $_POST['Existencia']);
+
 
 
 
@@ -46,7 +48,7 @@ if (isset($_POST['submit'])) {
 		// If all the fields are filled (not empty) 
 
 		// Insert data into database
-		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `NumSerie`, `Imagen`, `AmarreAldo`,`Marca`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$numSerie', '$imagen', '$amarreAldo','$marca')");
+		$result = mysqli_query($conex, "INSERT INTO productocat1 (`NombreCat1`, `PrecioCat1`, `descripcion`, `Existencia_Producto`, `NumSerie`, `Imagen`, `AmarreAldo`,`Marca`)VALUES('$nomProd', '$precioCat1', '$descripcion', '$Existencia', '$numSerie', '$imagen', '$amarreAldo','$marca')");
 		
 		?><script> alert('El producto se agrego correctamente.'); 
 		window.location.href = '../../IndexPHP/Gestion-productos.php';

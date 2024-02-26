@@ -17,9 +17,8 @@ if ($result > 0) {
         <tr>
 
             <th>
-            <form method="post" action="detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>">
-            <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto" class="btnnam"> <?php echo $data['NombreCat1'] ?></button>
-
+            
+            <button type="button" onclick="window.location.href='detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>'"> <?php echo $data['NombreCat1'] ?> </button>
             
             </th>
             
@@ -29,10 +28,14 @@ if ($result > 0) {
             <th><img width="125px" height="100px" src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1"></th>
             <th>Filtro de aire sentra 2005</th>
             <th>$<?php echo $data['PrecioCat1'] ?></th>
-            <th>15</th>
-            <th><input type="number"></th>
+            <th><?php echo $data['Existencia_Producto'] ?></th>
+            <th><input type="number" name="inputCantidadProducto"></th>
 
-            </form>
+            <input type="hidden" name="IDproductoCarrito" value="<?php echo $data['ContadorCat1']?>">
+            <input type="hidden" name="NombreProductoCarrito" value="<?php echo $data['NombreCat1']?>">
+            <input type="hidden" name="PrecioProductoCarrito" value="<?php echo $data['PrecioCat1']?>">
+
+        
 
         </tr>
 

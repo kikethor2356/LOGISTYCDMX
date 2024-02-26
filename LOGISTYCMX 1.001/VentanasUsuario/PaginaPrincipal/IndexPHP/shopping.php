@@ -62,6 +62,10 @@ include($document_root . '\CONEXION\conexion.php');
 
         <table>
 
+        <form method="post" action="../FuncionesPHP/CapturarPedidoTablaAcarrito.php">
+
+            <button name="btnCapturarPedido">Capturar pedido</button>
+
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -78,7 +82,7 @@ include($document_root . '\CONEXION\conexion.php');
                 <?php  include("..\FuncionesPHP\GeneradorTabla.php"); ?>
             </tbody>
 
-
+        </form>
 
         </table>
 
