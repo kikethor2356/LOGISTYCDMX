@@ -1,10 +1,20 @@
+
 <?php
 
+
+
+
 use LDAP\Result;
+
+session_start();
+
+if($_SESSION['CorreoIngreso']){
 
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\CONEXION\conexion.php');
+
+
 
 ?>
 
@@ -114,3 +124,15 @@ include($document_root . '\CONEXION\conexion.php');
 </body>
 
 </html>
+
+<?php 
+
+}
+
+else{
+    echo 'inicia sesion ';
+
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
+}
+
+?>

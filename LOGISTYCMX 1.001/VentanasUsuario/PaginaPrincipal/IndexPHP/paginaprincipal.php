@@ -1,10 +1,10 @@
 <?php
-/* 
+
 session_start();
 
 if($_SESSION['CorreoIngreso']){
 
- */ ?>
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,54 +56,19 @@ if($_SESSION['CorreoIngreso']){
             <h6>Mayoristas</h6>
         </div>
 
-    </section>
-
         <h2>Nuestros Productos</h2>
         <p>Todo lo que necesites en un click</p>
 
-        <button onclick="MostrarLista()" class="btnlis"><i class="fa-solid fa-list-ul fa-3x" style="color: #000000;"></i></button>
-        <button onclick="MostrarCuadricula()" class="btncua"><i class="fa-solid fa-border-all fa-3x" style="color: #000000; font-size: 300%; width: -10%; left: 0%"></i></button>
-        
-
-    <section id="product1" class="section-p1" style="display: none;">
-        
-        <div class="pro-container">
-
-        <?php  include("..\FuncionesPHP\GeneradorCuadricula.php"); ?>
-
-        </div>
     </section>
 
-
-
-    <section style="display: block;" id="tabla1">
-
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Foto</th>
-                    <th>Descripcion</th>
-                    <th>Precio</th>
-                    <th>Existencia</th>
-                    <th>Cantidad</th>
-                </tr>
-            </thead>
-
-
-            <tbody>
-                <?php  include("..\FuncionesPHP\GeneradorTabla.php"); ?>
-            </tbody>
-
-
-
-        </table>
         
-        <?php ?>
-        
-    </section>
 
+
+
+
+
+
+   
 
 
     <section id="newsletter" class="section-p1 section-m1">
@@ -123,11 +88,13 @@ if($_SESSION['CorreoIngreso']){
 </html>
 
 <?php 
-/*
+
 }
 
 else{
     echo 'inicia sesion ';
+
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
 }
-*/
+
 ?>

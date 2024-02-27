@@ -1,3 +1,18 @@
+<?php
+
+
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+
+
+
+
+
+
+
+if($_SESSION['CorreoIngreso']){
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,3 +87,15 @@
         </section>
 </body>
 </html>
+
+<?php 
+
+}
+
+else{
+    echo 'inicia sesion ';
+
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
+}
+
+?>
