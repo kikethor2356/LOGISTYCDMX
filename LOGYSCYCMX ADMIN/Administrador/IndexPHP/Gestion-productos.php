@@ -68,7 +68,7 @@
                         <span class="icon">
                             <i class='bx bx-user'></i>
                         </span>
-                        <span class="tittle">Clientes</span>
+                        <span class="tittle">Cuentas</span>
                     </a>
                 </li>
 

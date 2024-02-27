@@ -92,7 +92,6 @@ if($_SESSION['CorreoIngreso']){
 }
 
 else{
-    echo 'inicia sesion ';
 
     header ("Location: $document_root\Errores\IndexNoSesion.php");
 }

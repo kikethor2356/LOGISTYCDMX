@@ -130,7 +130,6 @@ include($document_root . '\CONEXION\conexion.php');
 }
 
 else{
-    echo 'inicia sesion ';
 
     header ("Location: $document_root\Errores\IndexNoSesion.php");
 }

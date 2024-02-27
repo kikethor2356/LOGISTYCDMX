@@ -68,7 +68,7 @@
                         <span class="icon">
                             <i class='bx bx-user'></i>
                         </span>
-                        <span class="tittle">Clientes</span>
+                        <span class="tittle">Cuentas</span>
                     </a>
                 </li>
 
@@ -99,6 +99,28 @@
         <div class="main">
             <div class="topbar"></div>
 
+            <form method="POST" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\CuentasUsuario\GuardarCuentaUsuario.php">
+    
+                <h1>Alta de clientes</h1>
+
+                <input type="text" placeholder="Nombre(s)" name="nombre_user">
+            
+                <input type="text" placeholder="Apellidos" name="apellidos_user">
+
+                <input type="email" placeholder="Correo Electronico" name="email_user">
+            
+                <input type="password" placeholder="Contraseña" name="contra_user">
+            
+                <input type="password" placeholder="Confirmar contraseña">
+                
+                <input type="text" placeholder="Telefono" name="telefono_user">
+                
+                
+                <button type="submit" name="BtnRegistrar">Crear</button>
+            </form>
+
+            <br><br><br>
+
             <div class="main2AltaAdmin" id="main2">
 
 
@@ -121,8 +143,32 @@
                     <input type="submit" name="submitAdmin" value="Crear Administrador">
                 </form>
             </div>
+
+            <h1>Cuentas de clientes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Categoria</th>
+                        <th>Fecha creacion</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                <?php
+                    include("..\FuncionesPHP\CuentasUsuario\GeneradorCuentasClientes.php");
+                ?>
+
+                </tbody>
+            </table>   
         </div>
-    </div> 
+
+
 
 
    

@@ -18,27 +18,7 @@
         
         <div  class="form-container sign-up">
 
-                <form method="POST" action="\LOGIN-REGISTRO\FuncionesPHP\Guardar_Usuario.php">
-    
-                    <h1>Crea una cuenta</h1>
-    
-            
-            
-                    <input type="text" placeholder="Nombre(s)" name="nombre_user">
-                  
-                    <input type="text" placeholder="Apellidos" name="apellidos_user">
-              
-                    <input type="email" placeholder="Correo Electronico" name="email_user">
-                  
-                    <input type="password" placeholder="Contraseña" name="contra_user">
-                   
-                    <input type="password" placeholder="Confirmar contraseña">
-                    
-                    <input type="text" placeholder="Telefono" name="telefono_user">
-                    
-                    
-                    <button type="submit" name="BtnRegistrar">Crear</button>
-                </form>
+
             
             
         </div>
