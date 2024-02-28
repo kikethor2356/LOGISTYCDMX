@@ -45,9 +45,10 @@
                     <button class="hidden" id="login">Ingresar</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Bienvenido!</h1>
-                    <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio</p>
-                    <button class="hidden" id="register">Registrar</button>
+                    <h1>Bienvenido</h1>
+                    <p>Tenemos la experiencia personalizada que estabas buscando
+                        <br>¡Ingresa y descubrelo!
+                    </p>
                 </div>
             </div>
         </div>
