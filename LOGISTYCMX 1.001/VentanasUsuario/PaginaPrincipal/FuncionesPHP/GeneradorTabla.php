@@ -18,7 +18,7 @@ if ($result > 0) {
 
             <th>
             
-            <button type="button" onclick="window.location.href='detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>'"> <?php echo $data['NombreCat1'] ?> </button>
+            <button  type="button" onclick="window.location.href='detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>'"> <?php echo $data['NombreCat1'] ?> </button>
             
             </th>
             

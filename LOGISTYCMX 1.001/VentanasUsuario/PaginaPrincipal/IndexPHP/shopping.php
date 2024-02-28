@@ -40,10 +40,9 @@ include($document_root . '\CONEXION\conexion.php');
         <div id="Navbar">
             <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/paginaprincipal.php">Inicio</a></li>
             <li><a class="active" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/shopping.php">Tienda</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Contactanos</a></li>
             <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/cart.php"><i class="fa-solid fa-cart-shopping" style="color: #CA0101;"></i></a></li>
+
+            <li><a href="" class="User"><i class="fa-solid fa-user"></i></a></li>
         </div>
     </section>
 
@@ -67,14 +66,15 @@ include($document_root . '\CONEXION\conexion.php');
         </div>
     </section>
 
+    
 
-    <section style="display: block;" id="tabla1">
-
+    <section id="tabla1">
+       
         <table>
 
         <form method="post" action="../FuncionesPHP/CapturarPedidoTablaAcarrito.php">
 
-            <button name="btnCapturarPedido">Capturar pedido</button>
+            <button class="btn-cap" name="btnCapturarPedido">Capturar pedido</button>
 
             <thead>
                 <tr>
@@ -100,6 +100,7 @@ include($document_root . '\CONEXION\conexion.php');
 
     </section>
 
+  
 
 
 

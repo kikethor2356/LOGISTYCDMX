@@ -344,3 +344,75 @@ left: 0;
     cursor: pointer;
     border-color: red;
 }
+
+
+#tabla1{
+    width: 80%;
+    height: 650px;
+    overflow: auto;
+    
+}
+
+
+
+#tabla1 form table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+
+#tabla1 table thead th{
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    color: #CA0101;
+    font-size: 15px;
+}
+
+#tabla1 th,td{
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+#tabla1 th img{
+    width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+   
+}
+
+#tabla1 th button{
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#tabla1 th input{
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 2px solid #CA0101;
+   
+}
+
+#tabla1 .btn-cap{
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #CA0101;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#tabla1 .btn-cap:hover{
+    background: #5c2222;
+    color: #ffffff;
+    font-weight: 600;
+}

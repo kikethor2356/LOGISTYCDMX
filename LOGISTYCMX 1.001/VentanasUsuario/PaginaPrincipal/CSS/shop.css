@@ -36,6 +36,8 @@
     font-weight: 600;
 }
 
+
+
 /* SIngle Product */
 #prodetails .single-pro-image{
 
@@ -98,3 +100,10 @@
 #product1 h2{
     color: black;
 }
+
+#tabla1 table{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
