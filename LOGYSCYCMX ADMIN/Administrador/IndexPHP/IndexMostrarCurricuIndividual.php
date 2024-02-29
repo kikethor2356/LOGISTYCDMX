@@ -1,3 +1,18 @@
+<?php
+
+
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+
+
+
+
+
+
+
+if($_SESSION['CorreoIngreso']){
+ ?>
+
 
 <link rel="stylesheet" href="../CSS/EstilosIndexAdmin.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -88,8 +103,12 @@ else{
 
 
 
+}
+
+else{
 
 
-
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
+}
 
 ?>

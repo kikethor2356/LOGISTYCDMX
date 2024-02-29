@@ -1,5 +1,16 @@
 <?php
 
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+
+
+
+
+
+
+
+if($_SESSION['CorreoIngreso']){
+
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\CONEXION\conexion.php');
@@ -96,5 +107,13 @@ if (isset($_POST['BtnRegistrar'])) {
         ">Llena todos los campos</h3>
         <?php
     }
+}
+
+}
+
+else{
+
+
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
 }
 ?>

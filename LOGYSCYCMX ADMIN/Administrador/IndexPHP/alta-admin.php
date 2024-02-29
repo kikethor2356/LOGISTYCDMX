@@ -1,3 +1,17 @@
+<?php
+
+
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+
+
+
+
+
+
+
+if($_SESSION['CorreoIngreso']){
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,10 +148,14 @@
                     <input type="text" name="Apellido"  required>
                    
                     <label>Correo Electronico</label>
-                    <input type="text" name="Correo"  required>
+                    <input type="email" name="Correo"  required>
                     
                     <label>Contraseña</label>
                     <input type="password" name="Password" required>
+
+                    <label>Numero de telefono</label>
+                    <input type="number" name="telefono"  required>
+
                    
 
                     <input type="submit" name="submitAdmin" value="Crear Administrador">
@@ -166,6 +184,29 @@
 
                 </tbody>
             </table>   
+
+
+            <br><br><br>
+
+            <h1>Cuentas de Administradores</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Creador</th>
+                        <th>Fecha creacion</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                <?php
+                    include("..\FuncionesPHP\CuentasAdmin\GeneradorCuentasAdmin.php");
+                ?>
+                </tbody>
+            </table>
         </div>
 
 
@@ -176,3 +217,15 @@
 
 </body>
 </html>
+
+<?php 
+
+}
+
+else{
+
+
+    header ("Location: $document_root\Errores\IndexNoSesion.php");
+}
+
+?>
