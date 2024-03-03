@@ -24,9 +24,6 @@ if($_SESSION['CorreoIngreso']){
         <div id="Navbar">
             <li><a class="active" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/paginaprincipal.php">Inicio</a></li>
             <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/shopping.php">Tienda</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Contactanos</a></li>
             <li><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/cart.php"><i class="fa-solid fa-cart-shopping" style="color: #CA0101;"></i></a></li>
         </div>
     </section>
@@ -61,28 +58,7 @@ if($_SESSION['CorreoIngreso']){
 
     </section>
 
-        
 
-
-
-
-
-
-   
-
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Registrate para nuevas noticias</h4>
-            <p>Ingresa tu correo para actualizaciones <span>especiales</span></p>
-
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Tu correo Electronico">
-            <button class="normal">Registrate</button>
-        </div>
-
-    </section>
 </body>
 
 </html>

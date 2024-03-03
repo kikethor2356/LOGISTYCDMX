@@ -1,6 +1,10 @@
 <?php
-use LDAP\Result;
 
+
+use LDAP\Result;
+'<link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/shop.css">'; 
+'<link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/shop.css">';
+        
 $directorioActual = dirname(__DIR__);
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 include($document_root . '\CONEXION\conexion.php');
@@ -13,12 +17,12 @@ if ($result > 0) {
 ?>
 
         <div class="pro">
-
+        
         <form method="post" action="detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>">
 
-        <button type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
+        <button style="cursor:pointer;" type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
             <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-            <div class="des">
+            <div class="des" >
                 <span><?php echo $data['Marca'] ?></span>
                 <h5><?php echo $data['NombreCat1'] ?></h5>
                 <h4>$<?php echo $data['PrecioCat1'] ?></h4>
@@ -30,11 +34,11 @@ if ($result > 0) {
     </form>
 
 
-    <form method="post" action="../FuncionesPHP/AnadirCarritoDESDEcuadricula.php">
+    <form  method="post" action="../FuncionesPHP/AnadirCarritoDESDEcuadricula.php">
         <input type="hidden" name="hiddenNombreProducto" value="<?php echo $data['NombreCat1'] ?>">
         <input type="hidden" name="hiddenPrecioProducto" value="<?php echo $data['PrecioCat1'] ?>">
         <input type="number" name='CantidadProductosCarrito'>
-        <button type="submit" class="fa-solid fa-cart-shopping cart" name="btnAnadirCarritoCuadricula" value="<?php echo $data['ContadorCat1']?>"></button>
+        <button  type="submit" style="cursor:pointer;"; class="fa-solid fa-cart-shopping cart" name="btnAnadirCarritoCuadricula" value="<?php echo $data['ContadorCat1']?>"></button>
     </form>    
 
 

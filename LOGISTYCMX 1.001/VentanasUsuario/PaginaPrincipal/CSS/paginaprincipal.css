@@ -184,7 +184,6 @@ left: 0;
     padding: 10px 12px;
     border: 1px solid #cccccc;
     border-radius: 25px;
-    cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
     transition: 0.2s ease;
@@ -347,9 +346,9 @@ left: 0;
 
 
 #tabla1{
-    width: 80%;
-    height: 650px;
-    overflow: auto;
+    width: 100%;
+    
+    
     
 }
 
@@ -358,28 +357,30 @@ left: 0;
 #tabla1 form table{
     width: 100%;
     table-layout: fixed;
+    
 }
 
 
 
 #tabla1 table thead th{
+    font-weight: 800;
     position: sticky;
     top: 0;
     background-color: rgb(255, 255, 255);
     color: #CA0101;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #tabla1 th,td{
+    font-weight: 400;
     border-bottom: 1px solid #cccccc;
-    padding: 10px 20px;
+    padding: 5px 10px;
     word-break: break-all;
     text-align: center;
 }
 
 #tabla1 th img{
-    width: 300px;
-    height: 160px;
+    width: 200px;
     object-fit: cover;
     border-radius: 15px;
    
@@ -389,14 +390,14 @@ left: 0;
     border: none;
     background: none;
     font-size: 16px;
-    font-weight: 600;
+    
     cursor: pointer;
 }
 
 #tabla1 th input{
     padding: 15px 20px;
     border-radius: 20px;
-    border: 2px solid #CA0101;
+    border: 1px solid #c2c2c2;
    
 }
 

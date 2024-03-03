@@ -52,6 +52,9 @@ include($document_root . '\CONEXION\conexion.php');
 
     </section>
 
+
+    
+
     <section>
         <br>
     <button onclick="MostrarLista()" class="btnlis"><i class="fa-solid fa-list-ul fa-3x" style="color: #000000;"></i></button>
@@ -104,24 +107,9 @@ include($document_root . '\CONEXION\conexion.php');
 
 
 
-    <section id="pagination" class="section-p1">
-        <a href="">1</a>
-        <a href="">2</a>
-        <a href=""><i class="fa-solid fa-arrow-right"></i></i></a>
-    </section>
+    
 
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Registrate para nuevas noticias</h4>
-            <p>Ingresa tu correo para actualizaciones <span>especiales</span></p>
-
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Tu correo Electronico">
-            <button class="normal">Registrate</button>
-        </div>
-
-    </section>
+    
 </body>
 
 </html>
