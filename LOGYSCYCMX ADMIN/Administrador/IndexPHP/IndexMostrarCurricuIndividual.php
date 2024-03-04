@@ -108,7 +108,7 @@ else{
 else{
 
 
-    header ("Location: $document_root\Errores\IndexNoSesion.php");
+        header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
 }
 
 ?>

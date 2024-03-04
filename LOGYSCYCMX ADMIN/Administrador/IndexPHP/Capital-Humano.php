@@ -104,12 +104,14 @@ if($_SESSION['CorreoIngreso']){
 
 
                 <li>
-                    <a href="">
-                        <span class="icon">
-                            <i class='bx bx-log-out-circle'></i>
-                        </span>
-                        <span class="tittle">Cerrar Sesion</span>
-                    </a>
+                    <form action="\LOGIN-REGISTRO\FuncionesPHP\Cerrar_Sesion.php">
+                        <button type="submit">
+                            <span class="icon">
+                                <i class='bx bx-log-out-circle'></i>
+                            </span>
+                            <span class="tittle">Cerrar Sesion</span>
+                        </button>
+                    </form>
                 </li>
 
             </ul>
@@ -220,7 +222,7 @@ if($_SESSION['CorreoIngreso']){
 else{
 
 
-    header ("Location: $document_root\Errores\IndexNoSesion.php");
+    header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
 }
 
 ?>

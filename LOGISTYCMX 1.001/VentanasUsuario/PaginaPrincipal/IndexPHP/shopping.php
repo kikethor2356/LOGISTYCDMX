@@ -120,7 +120,7 @@ include($document_root . '\CONEXION\conexion.php');
 
 else{
 
-    header ("Location: $document_root\Errores\IndexNoSesion.php");
+    header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
 }
 
 ?>
