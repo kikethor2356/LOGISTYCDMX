@@ -50,7 +50,7 @@ body{
 
 
 /*HEADER START*/
-#header{
+.header{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -63,19 +63,19 @@ top: 0;
 left: 0;
 }
 
-#Navbar{
+.header .Navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#Navbar li{
+.header .Navbar li{
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#Navbar li a{
+.header .Navbar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -83,13 +83,13 @@ left: 0;
     transition: 0.3 ease;
 }
 
-#Navbar li a:hover,
-#Navbar li a.active{
+.header .Navbar li a:hover,
+.header .Navbar li a.active{
     color: #CA0101;
 }
 
-#Navbar li a.active::after,
-#Navbar li a:hover:after{
+.header .Navbar li a.active::after,
+.header .Navbar li a:hover:after{
     content: "";
     width: 30%;
     height: 2px;
@@ -98,6 +98,8 @@ left: 0;
     bottom: -4px;
     left: 20px;
 }
+
+
 
 /* Home Page */
 #hero{
