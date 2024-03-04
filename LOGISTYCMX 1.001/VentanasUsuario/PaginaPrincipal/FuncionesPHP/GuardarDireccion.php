@@ -45,8 +45,19 @@ if($conex){
                 $resultado = mysqli_query($conex, $consulta);
                 if ($resultado) {
 
-                    echo "si se agrego la direccion";
-                    //header ("Location: $document_root\LOGISTYCMX 1.001\PaginaPrincipal\detail-product.php\detail-product.php");
+                    $Usuario = $_SESSION['CorreoIngreso'];
+                    $consulta2="SELECT * FROM tarjeta_pago WHERE Propietario_Tarjeta = '$Usuario'";
+                    $resultado2=mysqli_query($conex,$consulta2);
+                    $filas2=mysqli_num_rows($resultado2); 
+        
+                    if($filas2){
+                        $IndexAredirigirDESDEenvio = "CheckCompra.php";
+        
+                    }else{
+                        $IndexAredirigirDESDEenvio = "Payment.php";
+                    }
+                   
+                    header("Location: /LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/" . $IndexAredirigirDESDEenvio);
                     
             
                 } else {

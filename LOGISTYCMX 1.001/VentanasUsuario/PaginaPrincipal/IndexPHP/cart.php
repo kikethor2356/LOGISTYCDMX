@@ -1,11 +1,6 @@
 <?php
-
-
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
-
-
-
 
 
 
@@ -82,7 +77,50 @@ if($_SESSION['CorreoIngreso']){
                 </tr>
                 </table>
             </div>
-            <button class="Btn_ctn" onclick="window.location.href='Envios.php'">Continuar Compra</button>
+
+            <?php 
+            
+
+                $Usuario = $_SESSION['CorreoIngreso'];
+                $consulta1="SELECT * FROM domicilio WHERE Usuario_Domicilio = '$Usuario'";
+                $resultado1=mysqli_query($conex,$consulta1);
+                $filas1=mysqli_num_rows($resultado1);
+
+                ////////////////////////
+
+                $consulta2="SELECT * FROM tarjeta_pago WHERE Propietario_Tarjeta = '$Usuario'";
+                $resultado2=mysqli_query($conex,$consulta2);
+                $filas2=mysqli_num_rows($resultado2);
+
+                if($filas1 && $filas2)
+                {
+                    echo "Ya agrego domicilio y tarjeta";
+                    $IndexRedirigido = "CheckCompra.php";
+                }else{
+
+                    if($filas1){
+                        echo "Ya agrego domicilio";
+                        $IndexRedirigido = "Payment.php";
+                    }
+                    else if($filas2){
+                        echo "Ya agrego tarjeta";
+                        $IndexRedirigido = "Envios.php";
+                    }
+                    else{
+                        echo "No tiene nada agregado";
+                        $IndexRedirigido = "Envios.php";
+                    }
+                    
+                }
+                
+                
+
+
+            ?>
+
+
+
+            <button class="Btn_ctn" onclick="window.location.href='<?php echo $IndexRedirigido; ?>'">Continuar Compra</button>
         </section>
 
         

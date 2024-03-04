@@ -96,6 +96,7 @@ if($_SESSION['CorreoIngreso']){
               
         
             </div>
+
     
             <button class="btnSig" name="btnAgregarDireccion">Siguiente</button>
     

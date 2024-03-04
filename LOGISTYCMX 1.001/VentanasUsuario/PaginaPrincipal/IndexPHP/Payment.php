@@ -36,7 +36,7 @@ if($_SESSION['CorreoIngreso']){
 
     <div class="container">
 
-        <form action="">
+        <form action="../FuncionesPHP/GuardarTarjeta.php" method="POST">
     
             <div class="row">
     
@@ -51,26 +51,26 @@ if($_SESSION['CorreoIngreso']){
                     </div>
                     <div class="inputBox">
                         <span>Nombre Tarjeta Hambiente:</span>
-                        <input type="text" placeholder="mr. john">
+                        <input type="text" placeholder="mr. john" name="NombreTarjeta" requierd>
                     </div>
                     <div class="inputBox">
                         <span>Numero de Tarjeta:</span>
-                        <input type="number" placeholder="1111-2222-3333-4444">
+                        <input type="number" placeholder="1111-2222-3333-4444"  name="NumeroTarjeta" requierd>
                     </div>
                    
     
                     <div class="flex">
                         <div class="inputBox">
                             <span>Mes:</span>
-                            <input type="text" placeholder="Enero">
+                            <input type="text" placeholder="Enero" name="MesTarjeta" requierd>
                         </div>
                         <div class="inputBox">
                             <span>Año :</span>
-                            <input type="number" placeholder="2022">
+                            <input type="number" placeholder="2022" name="AnoTarjeta" requierd>
                         </div>
                         <div class="inputBox">
                             <span>CVV :</span>
-                            <input type="text" placeholder="123">
+                            <input type="text" placeholder="123"  name="cvvTarjeta" requierd>
                         </div>
                     </div>
     
