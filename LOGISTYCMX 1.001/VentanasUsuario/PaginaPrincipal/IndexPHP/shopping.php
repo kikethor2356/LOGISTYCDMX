@@ -29,6 +29,7 @@ include($document_root . '\CONEXION\conexion.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
     <link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/shop.css">
+    
     <script src="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/Scripts/Shopping.js"></script>
 
 </head>

@@ -60,3 +60,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+
+
+.Btn_ctn{
+    padding:5px 15px;
+    height: 50px;
+    font-size: 17px;
+    background: #CA0101;
+    color:#fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+}
+
+.Btn_ctn:hover{
+    background: #460000;
+}
