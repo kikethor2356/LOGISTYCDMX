@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+if($_SESSION['CorreoIngreso']){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,4 +86,16 @@
     
 </body>
 </html>
+
+<?php 
+
+}
+
+else{
+
+
+    header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
+}
+
+?>
 

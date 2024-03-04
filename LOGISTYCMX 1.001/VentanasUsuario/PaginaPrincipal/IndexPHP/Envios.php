@@ -1,3 +1,9 @@
+<?php 
+session_start();
+
+if($_SESSION['CorreoIngreso']){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +37,7 @@
 
     <div class="container">
 
-        <form action="">
+        <form action="../FuncionesPHP/GuardarDireccion.php" method="POST">
     
             <div class="row">
     
@@ -39,58 +45,59 @@
     
                     <h3 class="title">Domicilio</h3>
     
+              
                     <div class="inputBox">
                         <span>Nombre Completo:</span>
-                        <input type="text" placeholder="Nombres y Apellidos">
+                        <input type="text" placeholder="Nombres y Apellidos" name="nombres_domicilio" required>
                     </div>
                     <div class="inputBox">
                         <span>Numero de Telefono:</span>
-                        <input placeholder="123 - 234 - 348 9">
+                        <input placeholder="123 - 234 - 348 9" name="numerotel_domicilio" required>
                     </div>
                     <div class="flex">
                         <div class="inputBox">
                             <span>Calle:</span>
-                            <input type="text" placeholder="Hidalgo">
+                            <input type="text" placeholder="Hidalgo" name="calle_domicilio" required>
                         </div>
                         <div class="inputBox">
                             <span>Numero Ext.</span>
-                            <input type="text" placeholder="#120">
+                            <input type="text" placeholder="#120" name="numeroext_domicilio" required>
                         </div>
 
                         <div class="inputBox">
                             <span>Numero Int.</span>
-                            <input type="text" placeholder="Opcional">
+                            <input type="text" placeholder="Opcional" name="numeroint_domicilio">
                         </div>
                     </div>
 
                     <div class="inputBox">
                         <span>Municipio:</span>
-                        <input type="text" placeholder="Municipio">
+                        <input type="text" placeholder="Municipio" name="municipio_domicilio" required>
                     </div>
     
                     <div class="flex">
                         <div class="inputBox">
                             <span>Estado :</span>
-                            <input type="text" placeholder="Mexico">
+                            <input type="text" placeholder="Mexico" name="estado_domicilio" required>
                         </div>
                         <div class="inputBox">
                             <span>C.P :</span>
-                            <input type="text" placeholder="123 45">
+                            <input type="text" placeholder="123 45" name="codigopostal_domicilio" required>
                         </div>
                     </div>
 
                     <div class="inputBox">
                         <span>Referencias:</span>
-                        <textarea class="txtarea" name=""></textarea>
+                        <textarea class="txtarea" name="referencias_domicilio" requierd></textarea>
                     </div>
     
                 </div>
     
-                
+              
         
             </div>
     
-            <button class="btnSig"><a href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/IndexPHP/Payment.php">Siguiente</a></button>
+            <button class="btnSig" name="btnAgregarDireccion">Siguiente</button>
     
         </form>
     
@@ -98,4 +105,16 @@
     
 </body>
 </html>
+
+<?php 
+
+}
+
+else{
+
+
+    header("location: \LOGIN-REGISTRO\IndexPHP\indexLOGIN.PHP");
+}
+
+?>
 

@@ -82,7 +82,7 @@ if($_SESSION['CorreoIngreso']){
                 </tr>
                 </table>
             </div>
-            <button class="Btn_ctn">Continuar Combra</button>
+            <button class="Btn_ctn" onclick="window.location.href='Envios.php'">Continuar Compra</button>
         </section>
 
         
