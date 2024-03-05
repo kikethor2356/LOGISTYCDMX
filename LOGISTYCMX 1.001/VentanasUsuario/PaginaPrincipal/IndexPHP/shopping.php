@@ -92,10 +92,12 @@ include($document_root . '\CONEXION\conexion.php');
           <hr />
 
           <li class="profile-dropdown-list-item">
-            <a href="#">
+          <form action="\LOGIN-REGISTRO\FuncionesPHP\Cerrar_Sesion.php">
+            <button>
               <i class="fa-solid fa-arrow-right-from-bracket"></i>
               Cerrar Sesion
-            </a>
+            </button>
+          </form>
           </li>
         </ul>
       </div>
