@@ -33,6 +33,13 @@ if($_SESSION['CorreoIngreso']){
             
         </div>
 
+        <div class="search-container">
+        <form action="" method="">
+            <input type="text" class="search-box" name="" placeholder="Buscar...">
+            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: #ca0101;"></i></button>
+        </form>
+    </div>
+
         <div class="profile-dropdown">
         <div onclick="toggle()" class="profile-dropdown-btn">
           <div class="profile-img">
