@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/LOGISTYCMX 1.001/VentanasUsuario/PaginaPrincipal/CSS/paginaprincipal.css">
+
 <?php
 
 $directorioActual = dirname(__DIR__);
@@ -24,7 +26,7 @@ if ($result > 0) {
 ?>
         <tr>
             <form method="POST" action="..\FuncionesPHP\BorrarProductoCarrito.php">
-                <td><button type="submit" value="<?php echo $IDProducto_Carrito;?>" name="btnEliminarCarrito">Eliminar</button></td>
+                <td><button type="submit" value="<?php echo $IDProducto_Carrito;?>" name="btnEliminarCarrito" class="btnbor"><i class="fa-solid fa-trash fa-3x" style="color: #ca0101;"></i></button></td>
             </form>
 
             <td><img src="https://mundorepuesto.com/imgparts/parts/DOR/1591166.jpg" alt=""></td>
@@ -44,7 +46,7 @@ if ($result > 0) {
     ?>
 
     <tr>
-        <th colspan="6">No hay productos en tu carrito</th>
+        <th colspan="6"><br>No hay productos en tu carrito</th>
      
     </tr>
 

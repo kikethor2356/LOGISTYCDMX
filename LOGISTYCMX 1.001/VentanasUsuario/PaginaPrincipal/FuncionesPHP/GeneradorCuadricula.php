@@ -20,9 +20,9 @@ if ($result > 0) {
         
         <form method="post" action="detail-product.php?ID_P=<?php echo $data['ContadorCat1']?>">
 
-        <button style="cursor:pointer;" type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
+        <button style="cursor:pointer; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 10px" type="submit" value="<?php echo $data['ContadorCat1'] ?>" name="btnDetalleProducto">
             <img src="https://texanoautopartes.com/wp-content/uploads/FAR503-1.jpg" alt="img1">
-            <div class="des" >
+            <div class="des">
                 <span><?php echo $data['Marca'] ?></span>
                 <h5><?php echo $data['NombreCat1'] ?></h5>
                 <h4>$<?php echo $data['PrecioCat1'] ?></h4>
@@ -37,7 +37,7 @@ if ($result > 0) {
     <form  method="post" action="../FuncionesPHP/AnadirCarritoDESDEcuadricula.php">
         <input type="hidden" name="hiddenNombreProducto" value="<?php echo $data['NombreCat1'] ?>">
         <input type="hidden" name="hiddenPrecioProducto" value="<?php echo $data['PrecioCat1'] ?>">
-        <input type="number" name='CantidadProductosCarrito'>
+        <input type="number" name='CantidadProductosCarrito' placeholder="Ingrese cantidad...">
         <button  type="submit" style="cursor:pointer;"; class="fa-solid fa-cart-shopping cart" name="btnAnadirCarritoCuadricula" value="<?php echo $data['ContadorCat1']?>"></button>
     </form>    
 

@@ -451,3 +451,12 @@ left: 0;
 .search-button:hover{
     cursor: pointer;
 }
+
+.btnbor{
+    background-color: transparent; 
+    border: none;
+}
+
+.btnbor:hover{
+    cursor: pointer;
+}
