@@ -138,18 +138,10 @@
             <div class="main4curriculum" id="main4">
                 <h1 align="center">Curriculum</h1>
 
-                <div class="contenedorCurriculums">
+                <div class="container">
 
 
-                    <table class="tablaCurriculums">
-                        <thead>
-
-                            <tr>
-                                <th class="curri">Curriculums</th>
-                            </tr>
-
-                        </thead>
-
+                    <table>
 
                         <tbody>
 
@@ -179,7 +171,7 @@
 
 
             <div class="main5vacantes" id="main5">
-
+                <h1 align="center">Vacantes</h1>
             <div class="container">
             <form class="mainForm" method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Vacantes\GuardarVacante.php" enctype="multipart/form-data">
                     <div class="form-control">

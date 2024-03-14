@@ -33,15 +33,15 @@ if ($conex){
                             <tr  class="divscur">
                             
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\IndexPHP\IndexMostrarCurricuIndividual.php">
-                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum?><div></div><?php echo $Vacante_Curriculum ?></button> </th>
-                            </form>
-
-                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\BorrarCurriculum.php">
-                                <th style="width:13.8%; position:relative;top: 0%; background-color: black; left: 97%"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><i class="fa-solid fa-trash fa-3x" style="color: #000000;"></i></button> </th>
+                                <th class="DIVcur"> <button name="btnCurriculum" href="IndexCurriculumIndividual.php" value="<?php echo $ID_Curriculum;?>" class="curname"><?php echo $Nombre_Curriculum?><div></div><?php echo $Vacante_Curriculum ?></button></th>
                             </form>
 
                             <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\pdf.php" target="_blank">
-                                <th style="width:13.8%; position:relative; background-color: black; left: 69.5%; bottom: 0%"> <button class="dwld" value="<?php echo $ID_Curriculum; ?>" name="btnPDFCurriculum"><i class="fa-solid fa-file-arrow-down fa-3x" style="color: #000000;"></i></button> </th>
+                                <th style="width:13.8%; position:relative; background-color: black; border: none; display: inline-block; left: -.5%; border-radius: 10px; margin-bottom: 2px;"> <button class="dwld" value="<?php echo $ID_Curriculum; ?>" name="btnPDFCurriculum"><i class="fa-solid fa-file-arrow-down fa-4x" style="color: #000000;"></i></button> </th>
+                            </form>
+
+                            <form method="post" action="\LOGYSCYCMX ADMIN\Administrador\FuncionesPHP\Curriculum\BorrarCurriculum.php">
+                                <th style="width:13.8%; position:relative; background-color: black; border: none; display: inline-block; left: -.9%; border-radius: 10px; margin-bottom: 2px;"> <button name="btnCurriculumBorrar" type="submit" value="<?php echo $ID_Curriculum; ?>" class="delt"><i class="fa-solid fa-trash fa-4x" style="color: #000000;"></i></button> </th>
                             </form>
                             
                             

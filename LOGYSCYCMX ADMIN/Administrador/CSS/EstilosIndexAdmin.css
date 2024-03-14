@@ -175,10 +175,10 @@
 .main4curriculum{
     position: absolute;
     width: 77%;
-    height: 86.9%;
+    height: 87%;
     left: 23%;
     top: 13%;
-    background-color: transparent;
+    background-color:  rgb(161, 202, 137);
     display: none;
 }
 
@@ -250,15 +250,6 @@ form h2{
     background-color: #5e0303;
 }
 
-.contenedorCurriculums{
-    background-color: rgb(161, 202, 137);
-    position: relative;
-    width: 100%;
-    height: 99.5%;
-    left: 0%;
-    top: -10%;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -309,30 +300,24 @@ th {
     cursor: pointer;
 }
 
-.curri{
-    position: absolute;
-    left: 90%;
-    bottom: 105%;
-    border-color: white;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 45px;
-    padding: 20px;
-    text-align: center;
-}
-
 .divscur{
     position: relative;
-    left: 38%;
-    top: 150%;
+    display: block;
+    left: 5%;
+    width: 90%;
+    border: none;
 }
 
 .DIVcur{
     position: relative;
-    display: block;
-    width: 200%;
-    left: 15%;
+    display: inline-block;
+    width: 70%;
+    left: 0%;
+    font-size: 33px;
     background-color: black;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2px;
 }
 
 .curname{
